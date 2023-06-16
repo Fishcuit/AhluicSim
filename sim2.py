@@ -76,37 +76,36 @@ def get_clusters(reel):
 
 def get_cluster(reel, visited, i, j):
     symbol = reel[i, j]  # The symbol in the current cell.
+    cluster = [(i, j)]  # Start with just the current cell itself.
+    stack = [(i, j)]  # Start with the current cell.
 
-    # A list to store the cells that are in the same cluster as the current cell.
-    # We start with just the current cell itself.
-    cluster = [(i, j)]
+    # Mark the initial cell as visited, unless it's the bonus symbol.
+    if symbol != bonus_symbol:
+        visited[i, j] = True
 
-    # A stack for our depth-first search. We start with the current cell.
-    stack = [(i, j)]
-
-    # Mark the current cell as visited.
-    visited[i, j] = True
-
-    # While there are still cells to visit:
-    while stack:
+    while stack:  # While there are still cells to visit:
         x, y = stack.pop()  # Pop a cell from the stack.
 
         # For each of the cell's four neighbors:
         for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
             nx, ny = x + dx, y + dy
 
-            # If the neighbor is within the grid, has the same symbol as the current cell, and hasn't been visited yet:
+            # If the neighbor is within the grid, has the same symbol as the current cell, or is a bonus symbol,
+            # and hasn't been visited yet (unless it's the bonus symbol):
             if (0 <= nx < reel.shape[0] and 0 <= ny < reel.shape[1] and
-                    reel[nx, ny] == symbol and not visited[nx, ny]):
+                (reel[nx, ny] == symbol or reel[nx, ny] == bonus_symbol) and 
+                (not visited[nx, ny] or reel[nx, ny] == bonus_symbol)):
 
-                # Add the neighbor to the stack and mark it as visited.
+                # Add the neighbor to the stack.
                 stack.append((nx, ny))
-                visited[nx, ny] = True
 
-                # Add the neighbor to the current cluster.
+                # Mark it as visited (unless it's the bonus symbol), and add it to the cluster.
+                if reel[nx, ny] != bonus_symbol:
+                    visited[nx, ny] = True
                 cluster.append((nx, ny))
 
     return cluster
+
 
 # Function to calculate win based on clusters
 
