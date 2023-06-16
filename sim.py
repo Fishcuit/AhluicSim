@@ -90,7 +90,7 @@ def play_round(grid_size):
     # If the grid is 4x4 or larger, replace the inner grid with symbols from the second reel.
     if grid_size >= 4:
         reel[1:-1, 1:-
-             1] = np.random.choice(reels[1], size=(grid_size-2, grid_size-2))
+             1] = np.random.choice(reels[0], size=(grid_size-2, grid_size-2))
 
     # If the grid is 6x6 or larger, replace the innermost 2x2 grid with symbols from the first reel.
     if grid_size >= 6:
