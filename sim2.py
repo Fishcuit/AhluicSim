@@ -3,10 +3,10 @@ import random
 
 # Just random columns I made for testing. Replace with your own.
 columns = [
-    ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '🟩', '⭐', '⭐', '🔷', '🔶'],
-    ['⭐', '🔷', '⭐', '🟩', '🔷', '🔶'],
-    ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶'],
+    ['⭐', '🟩', '🃏', '⭐', '🔷', '🔶'],
+    ['⭐', '🟩', '🔶', '⭐', '🔷', '🔶'],
+    ['🟩', '⭐', '🟩', '🟩', '🃏', '🔶'],
+    ['⭐', '🟩', '🟩', '🟩', '🔷', '🃏'],
     ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶'],
     ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶']
 ]
@@ -78,10 +78,10 @@ def get_cluster(reel, visited, i, j):
     symbol = reel[i, j]  # The symbol in the current cell.
     cluster = [(i, j)]  # Start with just the current cell itself.
     stack = [(i, j)]  # Start with the current cell.
+    bonus_stack = []  # Stack to hold bonus symbols for processing
 
-    # Mark the initial cell as visited, unless it's the bonus symbol.
-    if symbol != bonus_symbol:
-        visited[i, j] = True
+    # Mark the initial cell as visited.
+    visited[i, j] = True
 
     while stack:  # While there are still cells to visit:
         x, y = stack.pop()  # Pop a cell from the stack.
@@ -90,21 +90,41 @@ def get_cluster(reel, visited, i, j):
         for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
             nx, ny = x + dx, y + dy
 
-            # If the neighbor is within the grid, has the same symbol as the current cell, or is a bonus symbol,
-            # and hasn't been visited yet (unless it's the bonus symbol):
+            # If the neighbor is within the grid, has the same symbol as the current cell,
+            # is a bonus symbol, and hasn't been visited yet:
             if (0 <= nx < reel.shape[0] and 0 <= ny < reel.shape[1] and
                 (reel[nx, ny] == symbol or reel[nx, ny] == bonus_symbol) and 
-                (not visited[nx, ny] or reel[nx, ny] == bonus_symbol)):
+                not visited[nx, ny]):
 
-                # Add the neighbor to the stack.
-                stack.append((nx, ny))
-
-                # Mark it as visited (unless it's the bonus symbol), and add it to the cluster.
-                if reel[nx, ny] != bonus_symbol:
-                    visited[nx, ny] = True
+                # Mark it as visited and add it to the cluster.
+                visited[nx, ny] = True
                 cluster.append((nx, ny))
 
+                # If it's a bonus symbol, add it to the bonus stack. 
+                # Otherwise, add it to the normal stack.
+                if reel[nx, ny] == bonus_symbol:
+                    bonus_stack.append((nx, ny))
+                else:
+                    stack.append((nx, ny))
+
+    # Process bonus stack
+    while bonus_stack:
+        x, y = bonus_stack.pop()
+
+        # Check neighbors of bonus symbol for symbols same as the original symbol of the cluster
+        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            nx, ny = x + dx, y + dy
+
+            if (0 <= nx < reel.shape[0] and 0 <= ny < reel.shape[1] and
+                reel[nx, ny] == symbol and 
+                not visited[nx, ny]):
+
+                visited[nx, ny] = True
+                cluster.append((nx, ny))
+                stack.append((nx, ny))  # Add these symbols to the main stack for further processing
+
     return cluster
+
 
 
 # Function to calculate win based on clusters
