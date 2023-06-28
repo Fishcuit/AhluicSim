@@ -4,11 +4,11 @@ import random
 # Just random columns I made for testing. Replace with your own.
 columns = [
     ['⭐', '🟩', '🃏', '⭐', '🔷', '🔶'],
-    ['⭐', '🟩', '🔶', '⭐', '🔷', '🔶'],
-    ['🟩', '⭐', '🟩', '🟩', '🃏', '🔶'],
-    ['⭐', '🟩', '🟩', '🟩', '🔷', '🃏'],
+    ['⭐', '⭐', '🔶', '⭐', '🔷', '🔶'],
+    ['🔷', '🟩', '🔷', '🟩', '🃏', '🔶'],
+    ['⭐', '🟩', '🔷', '🟩', '🔷', '🃏'],
     ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶'],
-    ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶']
+    ['⭐', '🃏', '🔷', '🟩', '🔷', '🔶']
 ]
 
 bonus_symbol = '🃏'  # Bonus symbol for testing. Replace with your own.
@@ -83,11 +83,14 @@ def get_cluster(reel, visited, i, j):
     # Mark the initial cell as visited.
     visited[i, j] = True
 
-    while stack:  # While there are still cells to visit:
-        x, y = stack.pop()  # Pop a cell from the stack.
+    while stack or bonus_stack:  # While there are still cells to visit:
+        if stack:
+            x, y = stack.pop()  # Pop a cell from the stack.
+        else:
+            x, y = bonus_stack.pop()  # If the main stack is empty, pop a cell from the bonus stack instead.
 
         # For each of the cell's four neighbors:
-        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+        for dx, dy in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
             nx, ny = x + dx, y + dy
 
             # If the neighbor is within the grid, has the same symbol as the current cell,
@@ -107,23 +110,9 @@ def get_cluster(reel, visited, i, j):
                 else:
                     stack.append((nx, ny))
 
-    # Process bonus stack
-    while bonus_stack:
-        x, y = bonus_stack.pop()
-
-        # Check neighbors of bonus symbol for symbols same as the original symbol of the cluster
-        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
-            nx, ny = x + dx, y + dy
-
-            if (0 <= nx < reel.shape[0] and 0 <= ny < reel.shape[1] and
-                reel[nx, ny] == symbol and 
-                not visited[nx, ny]):
-
-                visited[nx, ny] = True
-                cluster.append((nx, ny))
-                stack.append((nx, ny))  # Add these symbols to the main stack for further processing
-
     return cluster
+
+
 
 
 
