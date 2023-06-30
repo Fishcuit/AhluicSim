@@ -1,65 +1,67 @@
-from collections import defaultdict
+def create_grid(columns):
+    grid = [list(column) for column in zip(*columns)]
+    return grid
 
-def dfs(grid, i, j, visited, current_cluster, symbol):
-    rows, cols = len(grid), len(grid[0])
-    directions = [(0, 1), (1, 0), (-1, 0), (0, -1)]
+
+def get_sub_grids(grid):
+    grid_2x2 = [row[2:4] for row in grid[2:4]]
+    grid_4x4 = [row[1:5] for row in grid[1:5]]
+    return grid_2x2, grid_4x4
+
+
+def dfs(i, j, grid, wild='🃏'):
     stack = [(i, j)]
+    visited = set()
+    symbol = grid[i][j]
+    cluster_cells = set()  # To store the cells belonging to the current cluster
     while stack:
         x, y = stack.pop()
-        if (x, y) not in visited and (grid[x][y] == symbol or grid[x][y] == '🃏'):
-            visited.add((x, y))
-            current_cluster.append((x, y))
-            for dx, dy in directions:
-                nx, ny = x + dx, y + dy
-                if 0 <= nx < rows and 0 <= ny < cols:
+        if (x, y) in visited:  # Skip visited cells
+            continue
+        visited.add((x, y))
+        cluster_cells.add((x, y))
+        for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+            nx, ny = x + dx, y + dy
+            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
+                if grid[nx][ny] == symbol or grid[nx][ny] == wild or symbol == wild:
                     stack.append((nx, ny))
+    return cluster_cells if len(cluster_cells) >= 4 else set()  # Return cells if it's a cluster
 
 def count_clusters(grid):
-    visited = set()
-    clusters = defaultdict(list)
-    cell_to_cluster = {}
-    rows, cols = len(grid), len(grid[0])
-    cluster_id = 0
-    for i in range(rows):
-        for j in range(cols):
-            if (i, j) not in visited and grid[i][j] != '🃏':
-                current_cluster = []
-                dfs(grid, i, j, visited, current_cluster, grid[i][j])
-                if len(current_cluster) >= 4:  # only consider cluster if its size >= 4
-                    clusters[cluster_id] = current_cluster
-                    for cell in current_cluster:
-                        cell_to_cluster[cell] = cluster_id
-                    cluster_id += 1
-    return clusters, cell_to_cluster
-
-def check_grid_sizes(grid, clusters):
-    sizes = [2, 4, 6]
-    counts = []
-    for size in sizes:
-        count = 0
-        min_row, max_row = 3 - size // 2, 3 + size // 2
-        min_col, max_col = 3 - size // 2, 3 + size // 2
-        for cluster in clusters.values():
-            if all(min_row <= x < max_row and min_col <= y < max_col for x, y in cluster):
-                count += 1
-        counts.append(count)
-    return counts
+    all_cluster_cells = set()  # Keep track of all cells that are part of any cluster
+    clusters = []
+    cluster_sizes = []
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if (i, j) not in all_cluster_cells:  # Only start a new DFS if the cell is not part of any cluster
+                cluster_cells = dfs(i, j, grid)
+                if cluster_cells:  # If it's a cluster
+                    all_cluster_cells.update(cluster_cells)  # Add the cells to the set of all cluster cells
+                    clusters.append(cluster_cells)
+                    cluster_sizes.append(len(cluster_cells))
+    return len(clusters), cluster_sizes
 
 
-grid = [
-    ['🃏', '🟩', '🔷', '⭐', '🟩', '🔶'],
-    ['⭐', '🔶', '🔷', '⭐', '🟩', '🔶'],
-    ['⭐', '🔶', '🔶', '⭐', '🟩', '🔶'],
-    ['⭐', '🟩', '🔷', '🃏', '🟩', '🔶'],
+
+
+
+columns = [
     ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '🟩', '🔷', '⭐', '🟩', '🔶']
+    ['⭐', '⭐', '🃏', '⭐', '🔷', '🔶'],
+    ['🔷', '🟩', '🟩', '🟩', '🔷', '🔶'],
+    ['⭐', '🟩', '🃏', '🟩', '🃏', '🃏'],
+    ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶'],
+    ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶']
 ]
 
-clusters, cell_to_cluster = count_clusters(grid)
-print(f"Total number of clusters: {len(clusters)}")
+grid = create_grid(columns)
+grid_2x2, grid_4x4 = get_sub_grids(grid)
 
-counts = check_grid_sizes(grid, clusters)
-print("Number of clusters in 2x2 grid: ", counts[0])
-print("Number of clusters in 4x4 grid: ", counts[1])
-print("Number of clusters in 6x6 grid: ", counts[2])
+clusters_2x2, sizes_2x2 = count_clusters(grid_2x2)
+clusters_4x4, sizes_4x4 = count_clusters(grid_4x4)
+clusters_6x6, sizes_6x6 = count_clusters(grid)
+
+print(f"2x2 grid has {clusters_2x2} clusters with sizes {sizes_2x2}")
+print(f"4x4 grid has {clusters_4x4} clusters with sizes {sizes_4x4}")
+print(f"6x6 grid has {clusters_6x6} clusters with sizes {sizes_6x6}")
 
