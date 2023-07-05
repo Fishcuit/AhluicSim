@@ -1,6 +1,16 @@
-def create_grid(columns):
-    grid = [list(column) for column in zip(*columns)]
+import random
+
+
+def generate_random_grid(n_rows, n_cols):
+    symbols = ['⭐', '🟩', '🔷', '🔶', '🃏']
+    grid = [[random.choice(symbols) for _ in range(n_cols)] for _ in range(n_rows)]
     return grid
+
+n_rows, n_cols = 6, 6  # Specify the size of the grid
+
+
+
+
 
 
 def get_sub_grids(grid):
@@ -10,13 +20,22 @@ def get_sub_grids(grid):
 
 
 def dfs(i, j, grid, wild='🃏'):
+    symbol = grid[i][j]
+    if symbol == wild:  # Check if there are any same symbol neighbors
+        for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+            nx, ny = i + dx, j + dy
+            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] != wild:
+                symbol = grid[nx][ny]
+                break
+        else:  # If no same symbol neighbors found, return
+            return set()
+
     stack = [(i, j)]
     visited = set()
-    symbol = grid[i][j]
-    cluster_cells = set()  # To store the cells belonging to the current cluster
+    cluster_cells = set()
     while stack:
         x, y = stack.pop()
-        if (x, y) in visited:  # Skip visited cells
+        if (x, y) in visited:
             continue
         visited.add((x, y))
         cluster_cells.add((x, y))
@@ -25,7 +44,9 @@ def dfs(i, j, grid, wild='🃏'):
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
                 if grid[nx][ny] == symbol or grid[nx][ny] == wild or symbol == wild:
                     stack.append((nx, ny))
-    return cluster_cells if len(cluster_cells) >= 4 else set()  # Return cells if it's a cluster
+
+    return cluster_cells if len(cluster_cells) >= 4 else set()
+
 
 def count_clusters(grid):
     all_cluster_cells = set()  # Keep track of all cells that are part of any cluster
@@ -45,18 +66,20 @@ def count_clusters(grid):
 
 
 
-columns = [
-    ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '⭐', '🔶', '⭐', '🔷', '🔶'],
-    ['🔷', '🟩', '🔶', '🟩', '🔷', '🟩'],
-    ['⭐', '🟩', '⭐', '🔶', '🔶', '🟩'],
-    ['⭐', '🔶', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '🟩', '🔷', '🟩', '🔷', '🃏']
-]
 
-grid = create_grid(columns)
+
+grid = generate_random_grid(n_rows, n_cols)
+
 grid_2x2, grid_4x4 = get_sub_grids(grid)
-
+print("2x2 grid:")
+for row in grid_2x2:
+    print(row)
+print("4x4 grid:")
+for row in grid_4x4:
+    print(row)
+print("6x6 grid:")
+for row in grid:
+    print(row)
 clusters_2x2, sizes_2x2 = count_clusters(grid_2x2)
 clusters_4x4, sizes_4x4 = count_clusters(grid_4x4)
 clusters_6x6, sizes_6x6 = count_clusters(grid)
