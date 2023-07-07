@@ -19,14 +19,15 @@ def get_sub_grids(grid):
 
 def dfs(i, j, grid, wild='WD'):
     symbol = grid[i][j]
+    wild_cluster = True  # Initially assume it's a wild cluster
+
     if symbol == wild:  # Check if there are any same symbol neighbors
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = i + dx, j + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] != wild:
                 symbol = grid[nx][ny]
+                wild_cluster = False  # If any neighbor is not a wild symbol, it's not a wild cluster
                 break
-        else:  # If no same symbol neighbors found, return
-            return set()
 
     stack = [(i, j)]
     visited = set()
@@ -40,10 +41,11 @@ def dfs(i, j, grid, wild='WD'):
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
-                if grid[nx][ny] == symbol or grid[nx][ny] == wild or symbol == wild:
+                if grid[nx][ny] == symbol or (wild_cluster and grid[nx][ny] == wild) or (grid[nx][ny] == wild and not wild_cluster):
                     stack.append((nx, ny))
 
-    return cluster_cells if len(cluster_cells) >= 4 else set()
+    return cluster_cells if len(cluster_cells) >= 4 else set()  # Return cells if it's a cluster
+
 
 
 def count_clusters(grid):
@@ -68,7 +70,7 @@ def count_clusters(grid):
     return len(clusters), cluster_sizes, cluster_grid
 
 
-with open("output.txt", "a") as file:
+with open("output.txt", "w") as file:
     for _ in range(100):  # Run the simulation 100 times
         grid = generate_random_grid(n_rows, n_cols)
         grid_2x2, grid_4x4 = get_sub_grids(grid)

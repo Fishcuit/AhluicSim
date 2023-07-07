@@ -10,22 +10,34 @@ def get_sub_grids(grid):
 
 
 def dfs(i, j, grid, wild='🃏'):
+    symbol = grid[i][j]
+    wild_cluster = True  # Initially assume it's a wild cluster
+
+    if symbol == wild:  # Check if there are any same symbol neighbors
+        for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+            nx, ny = i + dx, j + dy
+            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] != wild:
+                symbol = grid[nx][ny]
+                wild_cluster = False  # If any neighbor is not a wild symbol, it's not a wild cluster
+                break
+
     stack = [(i, j)]
     visited = set()
-    symbol = grid[i][j]
-    cluster_cells = set()  # To store the cells belonging to the current cluster
+    cluster_cells = set()
     while stack:
         x, y = stack.pop()
-        if (x, y) in visited:  # Skip visited cells
+        if (x, y) in visited:
             continue
         visited.add((x, y))
         cluster_cells.add((x, y))
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
-                if grid[nx][ny] == symbol or grid[nx][ny] == wild or symbol == wild:
+                if grid[nx][ny] == symbol or (wild_cluster and grid[nx][ny] == wild) or (grid[nx][ny] == wild and not wild_cluster):
                     stack.append((nx, ny))
+
     return cluster_cells if len(cluster_cells) >= 4 else set()  # Return cells if it's a cluster
+
 
 def count_clusters(grid):
     all_cluster_cells = set()  # Keep track of all cells that are part of any cluster
@@ -48,8 +60,8 @@ def count_clusters(grid):
 columns = [
     ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
     ['⭐', '⭐', '🔶', '⭐', '🔷', '🔶'],
-    ['🔷', '🟩', '🔶', '🟩', '🔷', '🟩'],
-    ['⭐', '🟩', '⭐', '🔶', '🔶', '🟩'],
+    ['🔷', '🟩', '🃏', '🃏', '🔷', '🟩'],
+    ['⭐', '🟩', '🃏', '🃏', '🔶', '🟩'],
     ['⭐', '🔶', '🔷', '⭐', '🔷', '🔶'],
     ['⭐', '🟩', '🔷', '🟩', '🔷', '🃏']
 ]
