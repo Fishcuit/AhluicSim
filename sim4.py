@@ -11,15 +11,13 @@ def get_sub_grids(grid):
 
 def dfs(i, j, grid, wild='🃏'):
     symbol = grid[i][j]
-    wild_cluster = True  # Initially assume it's a wild cluster
+    wild_neighbors = set()  # This set will hold the symbols of the non-wild neighbors of a wild cell
 
     if symbol == wild:  # Check if there are any same symbol neighbors
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = i + dx, j + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] != wild:
-                symbol = grid[nx][ny]
-                wild_cluster = False  # If any neighbor is not a wild symbol, it's not a wild cluster
-                break
+                wild_neighbors.add(grid[nx][ny])
 
     stack = [(i, j)]
     visited = set()
@@ -33,10 +31,11 @@ def dfs(i, j, grid, wild='🃏'):
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
-                if grid[nx][ny] == symbol or (wild_cluster and grid[nx][ny] == wild) or (grid[nx][ny] == wild and not wild_cluster):
+                if grid[nx][ny] in wild_neighbors or (grid[nx][ny] == symbol and grid[nx][ny] != wild) or grid[nx][ny] == wild:
                     stack.append((nx, ny))
 
     return cluster_cells if len(cluster_cells) >= 4 else set()  # Return cells if it's a cluster
+
 
 
 def count_clusters(grid):
@@ -57,13 +56,21 @@ def count_clusters(grid):
 
 
 
+# columns = [
+#     ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
+#     ['⭐', '⭐', '🔶', '⭐', '🔷', '🔶'],
+#     ['🔷', '🟩', '🃏', '🃏', '🔷', '🟩'],
+#     ['⭐', '🟩', '🃏', '🃏', '🃏', '🟩'],
+#     ['⭐', '🔶', '🔷', '⭐', '🔷', '🔶'],
+#     ['⭐', '🟩', '🔷', '🟩', '🔷', '🃏']
+# ]
 columns = [
     ['⭐', '🟩', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '⭐', '🔶', '⭐', '🔷', '🔶'],
-    ['🔷', '🟩', '🃏', '🃏', '🔷', '🟩'],
-    ['⭐', '🟩', '🃏', '🃏', '🔶', '🟩'],
+    ['⭐', '🃏', '🃏', '🃏', '🔷', '🔶'],
+    ['🔷', '🃏', '🟩', '🟩', '🔷', '🟩'],
+    ['⭐', '🃏', '🔶', '⭐', '🔶', '🟩'],
     ['⭐', '🔶', '🔷', '⭐', '🔷', '🔶'],
-    ['⭐', '🟩', '🔷', '🟩', '🔷', '🃏']
+    ['⭐', '🟩', '🔷', '🟩', '🔷', '🔶']
 ]
 
 grid = create_grid(columns)
