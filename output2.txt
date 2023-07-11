@@ -1,0 +1,3400 @@
+**********************************************************Simulation #1*****************************************************************
+2x2 grid:
+CC EE
+AA GG
+2x2 grid has 0 clusters with sizes []
+CC EE
+AA GG
+
+4x4 grid:
+JT DD JT HH
+EE CC EE WD
+JT AA GG EE
+JT WD DD JT
+4x4 grid has 0 clusters with sizes []
+JT DD JT HH
+EE CC EE WD
+JT AA GG EE
+JT WD DD JT
+
+6x6 grid:
+BB EE GG WD DD JT
+JT JT DD JT HH WD
+JT EE CC EE WD CC
+JT JT AA GG EE CC
+JT JT WD DD JT JT
+HH CC BB CC JT WD
+6x6 grid has 1 clusters with sizes [4]
+BB EE GG WD DD JT
+JT JT DD JT HH 00
+JT EE CC EE 00 00
+JT JT AA GG EE 00
+JT JT WD DD JT JT
+HH CC BB CC JT WD
+
+**********************************************************Simulation #2*****************************************************************
+2x2 grid:
+CC BB
+JT WD
+2x2 grid has 0 clusters with sizes []
+CC BB
+JT WD
+
+4x4 grid:
+BB AA GG AA
+AA CC BB DD
+HH JT WD GG
+DD WD GG CC
+4x4 grid has 1 clusters with sizes [4]
+BB AA GG AA
+AA CC BB DD
+HH JT 00 00
+DD 00 00 CC
+
+6x6 grid:
+JT BB CC BB DD HH
+EE BB AA GG AA AA
+JT AA CC BB DD DD
+WD HH JT WD GG CC
+BB DD WD GG CC AA
+DD AA AA DD EE JT
+6x6 grid has 1 clusters with sizes [4]
+JT BB CC BB DD HH
+EE BB AA GG AA AA
+JT AA CC BB DD DD
+WD HH JT 00 00 CC
+BB DD 00 00 CC AA
+DD AA AA DD EE JT
+
+**********************************************************Simulation #3*****************************************************************
+2x2 grid:
+BB DD
+AA GG
+2x2 grid has 0 clusters with sizes []
+BB DD
+AA GG
+
+4x4 grid:
+DD GG GG EE
+HH BB DD JT
+DD AA GG DD
+CC AA HH CC
+4x4 grid has 0 clusters with sizes []
+DD GG GG EE
+HH BB DD JT
+DD AA GG DD
+CC AA HH CC
+
+6x6 grid:
+HH JT WD CC GG HH
+JT DD GG GG EE EE
+EE HH BB DD JT JT
+GG DD AA GG DD EE
+AA CC AA HH CC EE
+GG GG JT DD GG AA
+6x6 grid has 0 clusters with sizes []
+HH JT WD CC GG HH
+JT DD GG GG EE EE
+EE HH BB DD JT JT
+GG DD AA GG DD EE
+AA CC AA HH CC EE
+GG GG JT DD GG AA
+
+**********************************************************Simulation #4*****************************************************************
+2x2 grid:
+DD BB
+WD WD
+2x2 grid has 0 clusters with sizes []
+DD BB
+WD WD
+
+4x4 grid:
+EE DD JT AA
+AA DD BB AA
+JT WD WD GG
+GG AA HH HH
+4x4 grid has 2 clusters with sizes [4, 4]
+EE 00 JT AA
+AA 00 BB AA
+JT 01 01 GG
+GG AA 01 01
+
+6x6 grid:
+BB AA EE EE CC AA
+BB EE DD JT AA HH
+HH AA DD BB AA CC
+JT JT WD WD GG GG
+CC GG AA HH HH DD
+JT AA WD WD AA CC
+6x6 grid has 4 clusters with sizes [4, 4, 7, 6]
+BB AA EE EE CC AA
+BB EE 00 JT AA HH
+HH AA 00 BB AA CC
+JT JT 03 03 01 01
+CC GG 02 03 03 DD
+JT 02 03 03 02 CC
+
+**********************************************************Simulation #5*****************************************************************
+2x2 grid:
+BB EE
+BB CC
+2x2 grid has 0 clusters with sizes []
+BB EE
+BB CC
+
+4x4 grid:
+DD HH HH BB
+CC BB EE JT
+DD BB CC BB
+WD CC AA HH
+4x4 grid has 0 clusters with sizes []
+DD HH HH BB
+CC BB EE JT
+DD BB CC BB
+WD CC AA HH
+
+6x6 grid:
+GG EE AA BB WD AA
+BB DD HH HH BB DD
+HH CC BB EE JT DD
+AA DD BB CC BB JT
+AA WD CC AA HH JT
+HH CC CC AA GG BB
+6x6 grid has 1 clusters with sizes [4]
+GG EE AA BB WD AA
+BB DD HH HH BB DD
+HH CC BB EE JT DD
+AA DD BB CC BB JT
+AA 00 00 AA HH JT
+HH 00 00 AA GG BB
+
+**********************************************************Simulation #6*****************************************************************
+2x2 grid:
+AA GG
+WD CC
+2x2 grid has 0 clusters with sizes []
+AA GG
+WD CC
+
+4x4 grid:
+BB AA HH HH
+CC AA GG CC
+AA WD CC EE
+HH EE GG AA
+4x4 grid has 1 clusters with sizes [4]
+BB 00 HH HH
+CC 00 GG CC
+00 00 CC EE
+HH EE GG AA
+
+6x6 grid:
+WD BB AA AA EE EE
+JT BB AA HH HH BB
+WD CC AA GG CC AA
+GG AA WD CC EE HH
+JT HH EE GG AA JT
+BB DD HH GG DD CC
+6x6 grid has 1 clusters with sizes [6]
+WD BB 00 00 EE EE
+JT BB 00 HH HH BB
+WD CC 00 GG CC AA
+GG 00 00 CC EE HH
+JT HH EE GG AA JT
+BB DD HH GG DD CC
+
+**********************************************************Simulation #7*****************************************************************
+2x2 grid:
+DD GG
+EE AA
+2x2 grid has 0 clusters with sizes []
+DD GG
+EE AA
+
+4x4 grid:
+CC CC WD AA
+CC DD GG JT
+HH EE AA EE
+GG CC GG BB
+4x4 grid has 1 clusters with sizes [4]
+00 00 00 AA
+00 DD GG JT
+HH EE AA EE
+GG CC GG BB
+
+6x6 grid:
+BB HH JT HH GG DD
+CC CC CC WD AA EE
+WD CC DD GG JT DD
+JT HH EE AA EE BB
+GG GG CC GG BB EE
+DD WD EE JT GG EE
+6x6 grid has 1 clusters with sizes [6]
+BB HH JT HH GG DD
+00 00 00 00 AA EE
+00 00 DD GG JT DD
+JT HH EE AA EE BB
+GG GG CC GG BB EE
+DD WD EE JT GG EE
+
+**********************************************************Simulation #8*****************************************************************
+2x2 grid:
+CC DD
+AA WD
+2x2 grid has 0 clusters with sizes []
+CC DD
+AA WD
+
+4x4 grid:
+CC JT DD EE
+HH CC DD WD
+EE AA WD JT
+JT EE AA JT
+4x4 grid has 1 clusters with sizes [4]
+CC JT 00 EE
+HH CC 00 00
+EE AA 00 JT
+JT EE AA JT
+
+6x6 grid:
+EE DD WD JT CC AA
+GG CC JT DD EE HH
+HH HH CC DD WD DD
+WD EE AA WD JT EE
+CC JT EE AA JT EE
+WD HH CC AA HH CC
+6x6 grid has 2 clusters with sizes [5, 4]
+EE DD WD JT CC AA
+GG CC JT 00 EE HH
+HH HH CC 00 00 00
+WD EE 01 01 JT EE
+CC JT EE 01 JT EE
+WD HH CC 01 HH CC
+
+**********************************************************Simulation #9*****************************************************************
+2x2 grid:
+AA EE
+AA DD
+2x2 grid has 0 clusters with sizes []
+AA EE
+AA DD
+
+4x4 grid:
+BB BB DD CC
+DD AA EE GG
+GG AA DD WD
+GG JT EE GG
+4x4 grid has 0 clusters with sizes []
+BB BB DD CC
+DD AA EE GG
+GG AA DD WD
+GG JT EE GG
+
+6x6 grid:
+JT HH AA CC GG BB
+WD BB BB DD CC AA
+DD DD AA EE GG DD
+AA GG AA DD WD HH
+EE GG JT EE GG BB
+JT AA JT BB WD WD
+6x6 grid has 2 clusters with sizes [5, 4]
+JT HH AA CC GG BB
+WD BB BB DD CC AA
+DD DD AA EE 00 DD
+AA GG AA DD 00 HH
+EE GG JT EE 00 01
+JT AA JT 01 01 01
+
+**********************************************************Simulation #10*****************************************************************
+2x2 grid:
+GG HH
+WD BB
+2x2 grid has 0 clusters with sizes []
+GG HH
+WD BB
+
+4x4 grid:
+BB HH DD DD
+GG GG HH JT
+HH WD BB WD
+DD AA WD EE
+4x4 grid has 1 clusters with sizes [4]
+BB HH DD DD
+GG GG HH JT
+HH 00 00 00
+DD AA 00 EE
+
+6x6 grid:
+EE EE JT DD CC HH
+JT BB HH DD DD DD
+AA GG GG HH JT WD
+EE HH WD BB WD WD
+GG DD AA WD EE HH
+BB AA EE DD EE GG
+6x6 grid has 4 clusters with sizes [7, 6, 6, 4]
+EE EE JT 00 CC HH
+JT BB HH 00 00 00
+AA GG GG HH JT 03
+EE HH 01 01 03 03
+GG DD AA 02 02 03
+BB AA EE DD 02 GG
+
+**********************************************************Simulation #11*****************************************************************
+2x2 grid:
+AA CC
+AA DD
+2x2 grid has 0 clusters with sizes []
+AA CC
+AA DD
+
+4x4 grid:
+WD WD GG HH
+HH AA CC WD
+BB AA DD JT
+EE CC BB WD
+4x4 grid has 1 clusters with sizes [4]
+00 00 GG HH
+HH 00 CC WD
+BB 00 DD JT
+EE CC BB WD
+
+6x6 grid:
+BB AA BB JT WD DD
+CC WD WD GG HH WD
+BB HH AA CC WD CC
+HH BB AA DD JT JT
+DD EE CC BB WD JT
+WD WD CC HH WD HH
+6x6 grid has 5 clusters with sizes [5, 4, 4, 4, 4]
+BB 00 BB JT 01 DD
+CC 00 00 GG 01 02
+BB HH 00 02 02 02
+HH BB 00 DD JT JT
+DD EE 03 BB 04 JT
+03 03 03 04 04 04
+
+**********************************************************Simulation #12*****************************************************************
+2x2 grid:
+GG CC
+EE WD
+2x2 grid has 0 clusters with sizes []
+GG CC
+EE WD
+
+4x4 grid:
+DD GG GG DD
+JT GG CC CC
+AA EE WD EE
+CC EE WD JT
+4x4 grid has 2 clusters with sizes [4, 5]
+DD GG GG DD
+JT GG 00 00
+AA 01 01 01
+CC 01 01 JT
+
+6x6 grid:
+CC HH WD GG GG HH
+CC DD GG GG DD HH
+DD JT GG CC CC WD
+GG AA EE WD EE GG
+BB CC EE WD JT JT
+GG CC HH BB CC HH
+6x6 grid has 3 clusters with sizes [6, 5, 5]
+CC HH 00 00 00 HH
+CC DD 00 00 DD HH
+DD JT 00 01 01 01
+GG AA 02 02 02 GG
+BB CC 02 02 JT JT
+GG CC HH BB CC HH
+
+**********************************************************Simulation #13*****************************************************************
+2x2 grid:
+DD CC
+BB DD
+2x2 grid has 0 clusters with sizes []
+DD CC
+BB DD
+
+4x4 grid:
+CC WD WD EE
+GG DD CC AA
+CC BB DD GG
+BB DD BB WD
+4x4 grid has 1 clusters with sizes [4]
+00 00 00 EE
+GG DD 00 AA
+CC BB DD GG
+BB DD BB WD
+
+6x6 grid:
+JT DD AA HH JT HH
+WD CC WD WD EE DD
+DD GG DD CC AA CC
+AA CC BB DD GG AA
+WD BB DD BB WD WD
+JT DD WD WD JT WD
+6x6 grid has 5 clusters with sizes [5, 4, 4, 4, 6]
+JT DD AA HH JT HH
+00 00 00 00 EE DD
+DD GG DD 00 AA CC
+AA CC BB DD 01 02
+WD BB 03 04 04 04
+JT 03 04 04 JT 04
+
+**********************************************************Simulation #14*****************************************************************
+2x2 grid:
+AA WD
+WD AA
+2x2 grid has 1 clusters with sizes [4]
+00 00
+00 00
+
+4x4 grid:
+GG WD AA GG
+GG AA WD WD
+AA WD AA DD
+HH BB WD WD
+4x4 grid has 3 clusters with sizes [10, 5, 4]
+GG 00 00 GG
+GG 00 01 01
+00 02 00 01
+HH 02 02 02
+
+6x6 grid:
+EE JT BB CC CC JT
+HH GG WD AA GG BB
+WD GG AA WD WD GG
+AA AA WD AA DD JT
+GG HH BB WD WD BB
+EE WD EE JT BB JT
+6x6 grid has 5 clusters with sizes [4, 12, 4, 5, 6]
+EE JT BB CC CC JT
+HH 00 01 01 02 BB
+01 00 01 03 03 02
+01 01 04 01 03 JT
+GG HH 04 04 04 04
+EE WD EE JT 04 JT
+
+**********************************************************Simulation #15*****************************************************************
+2x2 grid:
+GG BB
+HH GG
+2x2 grid has 0 clusters with sizes []
+GG BB
+HH GG
+
+4x4 grid:
+AA HH DD JT
+JT GG BB GG
+HH HH GG HH
+AA WD DD HH
+4x4 grid has 0 clusters with sizes []
+AA HH DD JT
+JT GG BB GG
+HH HH GG HH
+AA WD DD HH
+
+6x6 grid:
+EE AA JT GG EE JT
+JT AA HH DD JT JT
+CC JT GG BB GG JT
+BB HH HH GG HH BB
+AA AA WD DD HH GG
+BB CC AA GG AA BB
+6x6 grid has 1 clusters with sizes [4]
+EE AA JT GG EE JT
+JT AA HH DD JT JT
+CC JT GG BB GG JT
+BB HH HH GG HH BB
+00 00 00 DD HH GG
+BB CC 00 GG AA BB
+
+**********************************************************Simulation #16*****************************************************************
+2x2 grid:
+AA DD
+AA CC
+2x2 grid has 0 clusters with sizes []
+AA DD
+AA CC
+
+4x4 grid:
+HH BB AA JT
+EE AA DD DD
+GG AA CC AA
+WD HH JT CC
+4x4 grid has 0 clusters with sizes []
+HH BB AA JT
+EE AA DD DD
+GG AA CC AA
+WD HH JT CC
+
+6x6 grid:
+JT WD WD AA GG BB
+BB HH BB AA JT AA
+AA EE AA DD DD GG
+EE GG AA CC AA EE
+BB WD HH JT CC WD
+CC DD HH GG HH EE
+6x6 grid has 1 clusters with sizes [4]
+JT 00 00 00 GG BB
+BB HH BB 00 JT AA
+AA EE AA DD DD GG
+EE GG AA CC AA EE
+BB WD HH JT CC WD
+CC DD HH GG HH EE
+
+**********************************************************Simulation #17*****************************************************************
+2x2 grid:
+WD AA
+JT EE
+2x2 grid has 0 clusters with sizes []
+WD AA
+JT EE
+
+4x4 grid:
+WD BB DD JT
+HH WD AA HH
+EE JT EE CC
+BB WD DD WD
+4x4 grid has 0 clusters with sizes []
+WD BB DD JT
+HH WD AA HH
+EE JT EE CC
+BB WD DD WD
+
+6x6 grid:
+JT AA CC DD JT EE
+WD WD BB DD JT JT
+GG HH WD AA HH GG
+AA EE JT EE CC DD
+EE BB WD DD WD WD
+EE EE HH AA EE AA
+6x6 grid has 3 clusters with sizes [4, 4, 5]
+JT AA CC DD JT EE
+01 01 00 DD JT JT
+GG 01 01 AA HH GG
+AA EE JT EE CC 02
+EE BB 02 02 02 02
+EE EE HH AA EE AA
+
+**********************************************************Simulation #18*****************************************************************
+2x2 grid:
+HH WD
+CC JT
+2x2 grid has 0 clusters with sizes []
+HH WD
+CC JT
+
+4x4 grid:
+EE HH GG EE
+HH HH WD EE
+AA CC JT AA
+BB DD BB EE
+4x4 grid has 1 clusters with sizes [4]
+EE 00 GG EE
+00 00 00 EE
+AA CC JT AA
+BB DD BB EE
+
+6x6 grid:
+DD CC JT EE CC EE
+JT EE HH GG EE GG
+CC HH HH WD EE BB
+WD AA CC JT AA DD
+CC BB DD BB EE AA
+HH HH DD BB WD BB
+6x6 grid has 2 clusters with sizes [4, 4]
+DD CC JT EE CC EE
+JT EE 00 GG EE GG
+CC 00 00 00 EE BB
+WD AA CC JT AA DD
+CC BB DD 01 EE AA
+HH HH DD 01 01 01
+
+**********************************************************Simulation #19*****************************************************************
+2x2 grid:
+HH WD
+CC WD
+2x2 grid has 0 clusters with sizes []
+HH WD
+CC WD
+
+4x4 grid:
+BB DD HH EE
+GG HH WD HH
+BB CC WD WD
+BB CC JT AA
+4x4 grid has 3 clusters with sizes [6, 5, 4]
+BB DD 00 EE
+GG 00 02 00
+BB 01 02 02
+BB 01 JT 02
+
+6x6 grid:
+AA WD EE DD WD CC
+BB BB DD HH EE EE
+AA GG HH WD HH WD
+WD BB CC WD WD CC
+AA BB CC JT AA AA
+JT AA BB GG AA HH
+6x6 grid has 4 clusters with sizes [7, 4, 7, 6]
+AA WD EE DD 01 CC
+BB BB DD 00 01 01
+AA GG 00 03 00 02
+WD BB 02 03 03 02
+AA BB 02 JT 03 03
+JT AA BB GG 03 HH
+
+**********************************************************Simulation #20*****************************************************************
+2x2 grid:
+WD JT
+BB WD
+2x2 grid has 0 clusters with sizes []
+WD JT
+BB WD
+
+4x4 grid:
+CC EE DD JT
+JT WD JT DD
+EE BB WD BB
+DD GG AA HH
+4x4 grid has 1 clusters with sizes [4]
+CC EE DD JT
+JT 00 JT DD
+EE 00 00 00
+DD GG AA HH
+
+6x6 grid:
+BB WD WD AA JT HH
+AA CC EE DD JT JT
+AA JT WD JT DD HH
+CC EE BB WD BB JT
+BB DD GG AA HH BB
+CC WD AA EE GG EE
+6x6 grid has 2 clusters with sizes [4, 4]
+BB 00 00 AA JT HH
+AA CC 00 DD JT JT
+AA JT 01 JT DD HH
+CC EE 01 01 01 JT
+BB DD GG AA HH BB
+CC WD AA EE GG EE
+
+**********************************************************Simulation #21*****************************************************************
+2x2 grid:
+AA AA
+AA JT
+2x2 grid has 0 clusters with sizes []
+AA AA
+AA JT
+
+4x4 grid:
+GG HH CC JT
+JT AA AA BB
+BB AA JT AA
+EE CC WD GG
+4x4 grid has 0 clusters with sizes []
+GG HH CC JT
+JT AA AA BB
+BB AA JT AA
+EE CC WD GG
+
+6x6 grid:
+DD HH WD DD HH GG
+JT GG HH CC JT GG
+HH JT AA AA BB AA
+GG BB AA JT AA CC
+CC EE CC WD GG BB
+JT JT HH EE WD HH
+6x6 grid has 0 clusters with sizes []
+DD HH WD DD HH GG
+JT GG HH CC JT GG
+HH JT AA AA BB AA
+GG BB AA JT AA CC
+CC EE CC WD GG BB
+JT JT HH EE WD HH
+
+**********************************************************Simulation #22*****************************************************************
+2x2 grid:
+EE JT
+BB JT
+2x2 grid has 0 clusters with sizes []
+EE JT
+BB JT
+
+4x4 grid:
+DD HH EE DD
+GG EE JT HH
+WD BB JT GG
+BB GG AA HH
+4x4 grid has 0 clusters with sizes []
+DD HH EE DD
+GG EE JT HH
+WD BB JT GG
+BB GG AA HH
+
+6x6 grid:
+JT BB HH JT WD DD
+HH DD HH EE DD CC
+DD GG EE JT HH GG
+BB WD BB JT GG CC
+DD BB GG AA HH BB
+CC GG HH HH EE EE
+6x6 grid has 1 clusters with sizes [4]
+JT BB HH JT WD DD
+HH DD HH EE DD CC
+DD GG EE JT HH GG
+00 00 00 JT GG CC
+DD 00 GG AA HH BB
+CC GG HH HH EE EE
+
+**********************************************************Simulation #23*****************************************************************
+2x2 grid:
+CC BB
+DD CC
+2x2 grid has 0 clusters with sizes []
+CC BB
+DD CC
+
+4x4 grid:
+WD JT AA CC
+EE CC BB GG
+DD DD CC DD
+CC DD DD HH
+4x4 grid has 1 clusters with sizes [4]
+WD JT AA CC
+EE CC BB GG
+00 00 CC DD
+CC 00 00 HH
+
+6x6 grid:
+AA JT HH GG AA JT
+HH WD JT AA CC GG
+WD EE CC BB GG BB
+BB DD DD CC DD JT
+AA CC DD DD HH DD
+EE WD EE EE JT CC
+6x6 grid has 2 clusters with sizes [4, 4]
+AA JT HH GG AA JT
+HH WD JT AA CC GG
+WD EE CC BB GG BB
+BB 00 00 CC DD JT
+AA CC 00 00 HH DD
+01 01 01 01 JT CC
+
+**********************************************************Simulation #24*****************************************************************
+2x2 grid:
+AA AA
+AA JT
+2x2 grid has 0 clusters with sizes []
+AA AA
+AA JT
+
+4x4 grid:
+JT HH BB JT
+CC AA AA EE
+JT AA JT DD
+GG WD WD GG
+4x4 grid has 2 clusters with sizes [5, 4]
+JT HH BB JT
+CC 00 00 EE
+JT 00 JT DD
+01 01 01 01
+
+6x6 grid:
+DD AA BB GG EE DD
+JT JT HH BB JT AA
+GG CC AA AA EE JT
+AA JT AA JT DD DD
+CC GG WD WD GG BB
+BB DD JT EE BB EE
+6x6 grid has 2 clusters with sizes [5, 4]
+DD AA BB GG EE DD
+JT JT HH BB JT AA
+GG CC 00 00 EE JT
+AA JT 00 JT DD DD
+CC 01 01 01 01 BB
+BB DD JT EE BB EE
+
+**********************************************************Simulation #25*****************************************************************
+2x2 grid:
+DD HH
+BB HH
+2x2 grid has 0 clusters with sizes []
+DD HH
+BB HH
+
+4x4 grid:
+AA DD DD BB
+CC DD HH GG
+JT BB HH AA
+BB JT BB EE
+4x4 grid has 0 clusters with sizes []
+AA DD DD BB
+CC DD HH GG
+JT BB HH AA
+BB JT BB EE
+
+6x6 grid:
+EE HH DD EE BB WD
+HH AA DD DD BB CC
+BB CC DD HH GG EE
+WD JT BB HH AA WD
+BB BB JT BB EE WD
+JT GG JT HH EE JT
+6x6 grid has 3 clusters with sizes [4, 4, 5]
+EE HH 00 EE BB WD
+HH AA 00 00 BB CC
+01 CC 00 HH GG 02
+01 JT BB HH AA 02
+01 01 JT BB 02 02
+JT GG JT HH 02 JT
+
+**********************************************************Simulation #26*****************************************************************
+2x2 grid:
+EE DD
+WD DD
+2x2 grid has 0 clusters with sizes []
+EE DD
+WD DD
+
+4x4 grid:
+HH WD CC JT
+JT EE DD DD
+BB WD DD GG
+AA HH JT GG
+4x4 grid has 1 clusters with sizes [4]
+HH WD CC JT
+JT EE 00 00
+BB 00 00 GG
+AA HH JT GG
+
+6x6 grid:
+HH DD BB HH DD BB
+AA HH WD CC JT GG
+HH JT EE DD DD AA
+EE BB WD DD GG BB
+WD AA HH JT GG BB
+JT AA HH GG WD AA
+6x6 grid has 2 clusters with sizes [4, 4]
+HH DD BB HH DD BB
+AA HH WD CC JT GG
+HH JT EE 00 00 AA
+EE BB 00 00 01 BB
+WD AA HH JT 01 BB
+JT AA HH 01 01 AA
+
+**********************************************************Simulation #27*****************************************************************
+2x2 grid:
+HH BB
+WD HH
+2x2 grid has 0 clusters with sizes []
+HH BB
+WD HH
+
+4x4 grid:
+WD GG EE WD
+EE HH BB JT
+JT WD HH JT
+CC AA WD BB
+4x4 grid has 1 clusters with sizes [4]
+WD GG EE WD
+EE 00 BB JT
+JT 00 00 JT
+CC AA 00 BB
+
+6x6 grid:
+BB GG HH JT GG DD
+BB WD GG EE WD EE
+GG EE HH BB JT GG
+WD JT WD HH JT GG
+JT CC AA WD BB WD
+GG DD DD DD BB DD
+6x6 grid has 3 clusters with sizes [4, 4, 4]
+BB GG HH JT GG DD
+BB WD GG EE WD EE
+GG EE 00 BB JT GG
+WD JT 00 00 JT GG
+JT CC AA 02 01 01
+GG 02 02 02 01 DD
+
+**********************************************************Simulation #28*****************************************************************
+2x2 grid:
+AA BB
+BB DD
+2x2 grid has 0 clusters with sizes []
+AA BB
+BB DD
+
+4x4 grid:
+AA DD JT BB
+EE AA BB AA
+WD BB DD DD
+JT BB DD CC
+4x4 grid has 0 clusters with sizes []
+AA DD JT BB
+EE AA BB AA
+WD BB DD DD
+JT BB DD CC
+
+6x6 grid:
+EE EE EE WD WD BB
+DD AA DD JT BB WD
+AA EE AA BB AA EE
+HH WD BB DD DD WD
+WD JT BB DD CC JT
+BB GG GG GG JT GG
+6x6 grid has 3 clusters with sizes [5, 5, 4]
+00 00 00 01 01 01
+DD AA DD JT 01 01
+AA EE AA BB AA EE
+HH WD BB 02 02 02
+WD JT BB 02 CC JT
+BB GG GG GG JT GG
+
+**********************************************************Simulation #29*****************************************************************
+2x2 grid:
+GG GG
+EE JT
+2x2 grid has 0 clusters with sizes []
+GG GG
+EE JT
+
+4x4 grid:
+CC HH JT BB
+WD GG GG DD
+HH EE JT DD
+AA BB BB CC
+4x4 grid has 0 clusters with sizes []
+CC HH JT BB
+WD GG GG DD
+HH EE JT DD
+AA BB BB CC
+
+6x6 grid:
+CC HH JT JT CC BB
+JT CC HH JT BB JT
+HH WD GG GG DD GG
+CC HH EE JT DD EE
+WD AA BB BB CC AA
+EE AA GG CC DD HH
+6x6 grid has 0 clusters with sizes []
+CC HH JT JT CC BB
+JT CC HH JT BB JT
+HH WD GG GG DD GG
+CC HH EE JT DD EE
+WD AA BB BB CC AA
+EE AA GG CC DD HH
+
+**********************************************************Simulation #30*****************************************************************
+2x2 grid:
+EE HH
+EE EE
+2x2 grid has 0 clusters with sizes []
+EE HH
+EE EE
+
+4x4 grid:
+AA WD HH DD
+CC EE HH GG
+HH EE EE JT
+EE HH EE BB
+4x4 grid has 1 clusters with sizes [5]
+AA 00 HH DD
+CC 00 HH GG
+HH 00 00 JT
+EE HH 00 BB
+
+6x6 grid:
+JT JT AA AA JT JT
+EE AA WD HH DD EE
+CC CC EE HH GG EE
+DD HH EE EE JT DD
+JT EE HH EE BB HH
+DD AA AA BB HH JT
+6x6 grid has 2 clusters with sizes [4, 5]
+JT JT 00 00 JT JT
+EE 00 01 HH DD EE
+CC CC 01 HH GG EE
+DD HH 01 01 JT DD
+JT EE HH 01 BB HH
+DD AA AA BB HH JT
+
+**********************************************************Simulation #31*****************************************************************
+2x2 grid:
+GG BB
+EE BB
+2x2 grid has 0 clusters with sizes []
+GG BB
+EE BB
+
+4x4 grid:
+DD AA DD DD
+CC GG BB WD
+HH EE BB HH
+EE BB HH CC
+4x4 grid has 0 clusters with sizes []
+DD AA DD DD
+CC GG BB WD
+HH EE BB HH
+EE BB HH CC
+
+6x6 grid:
+HH GG WD DD AA AA
+EE DD AA DD DD DD
+WD CC GG BB WD JT
+GG HH EE BB HH AA
+BB EE BB HH CC BB
+WD JT BB WD EE CC
+6x6 grid has 1 clusters with sizes [6]
+HH GG 00 00 AA AA
+EE DD AA 00 00 00
+WD CC GG BB 00 JT
+GG HH EE BB HH AA
+BB EE BB HH CC BB
+WD JT BB WD EE CC
+
+**********************************************************Simulation #32*****************************************************************
+2x2 grid:
+CC DD
+JT DD
+2x2 grid has 0 clusters with sizes []
+CC DD
+JT DD
+
+4x4 grid:
+EE HH EE CC
+WD CC DD BB
+BB JT DD DD
+BB AA BB AA
+4x4 grid has 0 clusters with sizes []
+EE HH EE CC
+WD CC DD BB
+BB JT DD DD
+BB AA BB AA
+
+6x6 grid:
+AA EE BB CC JT DD
+JT EE HH EE CC JT
+EE WD CC DD BB CC
+HH BB JT DD DD JT
+DD BB AA BB AA DD
+AA BB DD CC WD CC
+6x6 grid has 2 clusters with sizes [4, 4]
+AA 00 BB CC JT DD
+JT 00 HH EE CC JT
+00 01 CC DD BB CC
+HH 01 JT DD DD JT
+DD 01 AA BB AA DD
+AA 01 DD CC WD CC
+
+**********************************************************Simulation #33*****************************************************************
+2x2 grid:
+BB WD
+DD JT
+2x2 grid has 0 clusters with sizes []
+BB WD
+DD JT
+
+4x4 grid:
+BB EE HH AA
+AA BB WD EE
+CC DD JT AA
+JT GG JT AA
+4x4 grid has 0 clusters with sizes []
+BB EE HH AA
+AA BB WD EE
+CC DD JT AA
+JT GG JT AA
+
+6x6 grid:
+DD JT GG HH DD CC
+JT BB EE HH AA HH
+BB AA BB WD EE GG
+AA CC DD JT AA WD
+WD JT GG JT AA CC
+BB JT DD AA EE JT
+6x6 grid has 0 clusters with sizes []
+DD JT GG HH DD CC
+JT BB EE HH AA HH
+BB AA BB WD EE GG
+AA CC DD JT AA WD
+WD JT GG JT AA CC
+BB JT DD AA EE JT
+
+**********************************************************Simulation #34*****************************************************************
+2x2 grid:
+CC HH
+HH DD
+2x2 grid has 0 clusters with sizes []
+CC HH
+HH DD
+
+4x4 grid:
+DD AA AA BB
+CC CC HH EE
+DD HH DD GG
+CC GG CC EE
+4x4 grid has 0 clusters with sizes []
+DD AA AA BB
+CC CC HH EE
+DD HH DD GG
+CC GG CC EE
+
+6x6 grid:
+GG EE GG DD HH BB
+CC DD AA AA BB AA
+GG CC CC HH EE WD
+EE DD HH DD GG JT
+DD CC GG CC EE BB
+JT AA CC CC JT HH
+6x6 grid has 0 clusters with sizes []
+GG EE GG DD HH BB
+CC DD AA AA BB AA
+GG CC CC HH EE WD
+EE DD HH DD GG JT
+DD CC GG CC EE BB
+JT AA CC CC JT HH
+
+**********************************************************Simulation #35*****************************************************************
+2x2 grid:
+JT HH
+CC HH
+2x2 grid has 0 clusters with sizes []
+JT HH
+CC HH
+
+4x4 grid:
+DD WD GG CC
+HH JT HH HH
+WD CC HH HH
+CC HH WD BB
+4x4 grid has 1 clusters with sizes [6]
+DD WD GG CC
+HH JT 00 00
+WD CC 00 00
+CC 00 00 BB
+
+6x6 grid:
+CC HH CC JT CC EE
+DD DD WD GG CC GG
+BB HH JT HH HH GG
+GG WD CC HH HH BB
+BB CC HH WD BB HH
+EE GG CC WD GG WD
+6x6 grid has 2 clusters with sizes [7, 4]
+CC HH CC JT CC EE
+DD DD WD GG CC GG
+BB HH JT 00 00 GG
+GG WD CC 00 00 BB
+BB CC 00 01 BB HH
+EE GG CC 01 01 01
+
+**********************************************************Simulation #36*****************************************************************
+2x2 grid:
+HH HH
+JT CC
+2x2 grid has 0 clusters with sizes []
+HH HH
+JT CC
+
+4x4 grid:
+JT JT HH AA
+JT HH HH CC
+DD JT CC AA
+CC DD CC BB
+4x4 grid has 0 clusters with sizes []
+JT JT HH AA
+JT HH HH CC
+DD JT CC AA
+CC DD CC BB
+
+6x6 grid:
+JT JT CC BB WD BB
+JT JT JT HH AA DD
+EE JT HH HH CC GG
+WD DD JT CC AA DD
+BB CC DD CC BB JT
+EE BB HH WD WD CC
+6x6 grid has 1 clusters with sizes [5]
+JT JT CC BB WD BB
+JT JT JT HH AA DD
+EE JT HH HH CC GG
+WD DD JT 00 AA DD
+BB CC DD 00 BB JT
+EE BB HH 00 00 00
+
+**********************************************************Simulation #37*****************************************************************
+2x2 grid:
+AA WD
+AA WD
+2x2 grid has 1 clusters with sizes [4]
+00 00
+00 00
+
+4x4 grid:
+BB WD CC BB
+AA AA WD GG
+JT AA WD HH
+DD WD HH CC
+4x4 grid has 3 clusters with sizes [4, 7, 5]
+BB 01 00 BB
+01 01 02 GG
+JT 01 02 02
+DD 02 02 CC
+
+6x6 grid:
+GG CC DD WD AA HH
+CC BB WD CC BB BB
+CC AA AA WD GG AA
+CC JT AA WD HH CC
+DD DD WD HH CC JT
+EE JT JT BB CC BB
+6x6 grid has 3 clusters with sizes [5, 7, 5]
+GG CC DD 00 AA HH
+CC BB 01 00 BB BB
+CC 01 01 02 GG AA
+CC JT 01 02 02 CC
+DD DD 02 02 CC JT
+EE JT JT BB CC BB
+
+**********************************************************Simulation #38*****************************************************************
+2x2 grid:
+BB JT
+HH BB
+2x2 grid has 0 clusters with sizes []
+BB JT
+HH BB
+
+4x4 grid:
+CC DD GG AA
+GG BB JT DD
+AA HH BB HH
+WD DD DD BB
+4x4 grid has 0 clusters with sizes []
+CC DD GG AA
+GG BB JT DD
+AA HH BB HH
+WD DD DD BB
+
+6x6 grid:
+GG JT WD GG DD WD
+GG CC DD GG AA DD
+JT GG BB JT DD JT
+HH AA HH BB HH DD
+CC WD DD DD BB EE
+JT HH CC BB AA HH
+6x6 grid has 0 clusters with sizes []
+GG JT WD GG DD WD
+GG CC DD GG AA DD
+JT GG BB JT DD JT
+HH AA HH BB HH DD
+CC WD DD DD BB EE
+JT HH CC BB AA HH
+
+**********************************************************Simulation #39*****************************************************************
+2x2 grid:
+WD JT
+AA GG
+2x2 grid has 0 clusters with sizes []
+WD JT
+AA GG
+
+4x4 grid:
+GG CC CC CC
+AA WD JT JT
+GG AA GG AA
+HH DD HH JT
+4x4 grid has 1 clusters with sizes [4]
+GG 00 00 00
+AA 00 JT JT
+GG AA GG AA
+HH DD HH JT
+
+6x6 grid:
+CC HH HH BB AA WD
+HH GG CC CC CC DD
+WD AA WD JT JT CC
+GG GG AA GG AA GG
+EE HH DD HH JT BB
+GG GG BB AA AA DD
+6x6 grid has 2 clusters with sizes [4, 4]
+CC HH HH BB AA WD
+HH GG 00 00 00 DD
+01 01 01 JT JT CC
+GG GG 01 GG AA GG
+EE HH DD HH JT BB
+GG GG BB AA AA DD
+
+**********************************************************Simulation #40*****************************************************************
+2x2 grid:
+CC AA
+DD DD
+2x2 grid has 0 clusters with sizes []
+CC AA
+DD DD
+
+4x4 grid:
+DD GG BB HH
+HH CC AA CC
+AA DD DD CC
+EE CC AA BB
+4x4 grid has 0 clusters with sizes []
+DD GG BB HH
+HH CC AA CC
+AA DD DD CC
+EE CC AA BB
+
+6x6 grid:
+GG GG GG HH CC CC
+WD DD GG BB HH AA
+JT HH CC AA CC HH
+WD AA DD DD CC WD
+HH EE CC AA BB AA
+BB AA AA CC AA EE
+6x6 grid has 1 clusters with sizes [5]
+00 00 00 HH CC CC
+00 DD 00 BB HH AA
+JT HH CC AA CC HH
+WD AA DD DD CC WD
+HH EE CC AA BB AA
+BB AA AA CC AA EE
+
+**********************************************************Simulation #41*****************************************************************
+2x2 grid:
+WD CC
+HH JT
+2x2 grid has 0 clusters with sizes []
+WD CC
+HH JT
+
+4x4 grid:
+BB DD AA GG
+JT WD CC JT
+JT HH JT AA
+GG DD GG AA
+4x4 grid has 0 clusters with sizes []
+BB DD AA GG
+JT WD CC JT
+JT HH JT AA
+GG DD GG AA
+
+6x6 grid:
+DD GG HH GG EE WD
+CC BB DD AA GG HH
+JT JT WD CC JT EE
+HH JT HH JT AA EE
+JT GG DD GG AA HH
+JT EE CC HH BB BB
+6x6 grid has 0 clusters with sizes []
+DD GG HH GG EE WD
+CC BB DD AA GG HH
+JT JT WD CC JT EE
+HH JT HH JT AA EE
+JT GG DD GG AA HH
+JT EE CC HH BB BB
+
+**********************************************************Simulation #42*****************************************************************
+2x2 grid:
+HH DD
+CC DD
+2x2 grid has 0 clusters with sizes []
+HH DD
+CC DD
+
+4x4 grid:
+GG WD BB DD
+WD HH DD BB
+EE CC DD GG
+GG BB CC HH
+4x4 grid has 0 clusters with sizes []
+GG WD BB DD
+WD HH DD BB
+EE CC DD GG
+GG BB CC HH
+
+6x6 grid:
+JT CC DD GG JT BB
+HH GG WD BB DD JT
+EE WD HH DD BB GG
+AA EE CC DD GG EE
+AA GG BB CC HH GG
+BB CC BB WD CC DD
+6x6 grid has 0 clusters with sizes []
+JT CC DD GG JT BB
+HH GG WD BB DD JT
+EE WD HH DD BB GG
+AA EE CC DD GG EE
+AA GG BB CC HH GG
+BB CC BB WD CC DD
+
+**********************************************************Simulation #43*****************************************************************
+2x2 grid:
+GG EE
+HH HH
+2x2 grid has 0 clusters with sizes []
+GG EE
+HH HH
+
+4x4 grid:
+JT WD BB HH
+GG GG EE AA
+BB HH HH EE
+HH JT BB WD
+4x4 grid has 0 clusters with sizes []
+JT WD BB HH
+GG GG EE AA
+BB HH HH EE
+HH JT BB WD
+
+6x6 grid:
+DD CC GG EE GG AA
+EE JT WD BB HH JT
+JT GG GG EE AA GG
+CC BB HH HH EE DD
+DD HH JT BB WD GG
+DD GG DD CC WD HH
+6x6 grid has 1 clusters with sizes [4]
+DD CC 00 EE GG AA
+EE JT 00 BB HH JT
+JT 00 00 EE AA GG
+CC BB HH HH EE DD
+DD HH JT BB WD GG
+DD GG DD CC WD HH
+
+**********************************************************Simulation #44*****************************************************************
+2x2 grid:
+EE WD
+WD JT
+2x2 grid has 0 clusters with sizes []
+EE WD
+WD JT
+
+4x4 grid:
+HH HH HH HH
+CC EE WD HH
+WD WD JT HH
+BB CC AA JT
+4x4 grid has 3 clusters with sizes [7, 4, 4]
+00 00 00 00
+01 02 02 00
+02 02 JT 00
+BB 01 AA JT
+
+6x6 grid:
+BB GG HH BB BB GG
+CC HH HH HH HH EE
+EE CC EE WD HH GG
+JT WD WD JT HH BB
+GG BB CC AA JT BB
+EE EE HH JT JT GG
+6x6 grid has 3 clusters with sizes [8, 4, 4]
+BB GG 00 BB BB GG
+CC 00 00 00 00 EE
+EE 01 02 02 00 GG
+JT 02 02 JT 00 BB
+GG BB 01 AA JT BB
+EE EE HH JT JT GG
+
+**********************************************************Simulation #45*****************************************************************
+2x2 grid:
+JT GG
+EE CC
+2x2 grid has 0 clusters with sizes []
+JT GG
+EE CC
+
+4x4 grid:
+AA JT AA DD
+JT JT GG WD
+GG EE CC GG
+BB AA JT HH
+4x4 grid has 0 clusters with sizes []
+AA JT AA DD
+JT JT GG WD
+GG EE CC GG
+BB AA JT HH
+
+6x6 grid:
+DD GG HH GG EE GG
+HH AA JT AA DD EE
+WD JT JT GG WD JT
+EE GG EE CC GG JT
+WD BB AA JT HH CC
+AA HH EE AA EE BB
+6x6 grid has 0 clusters with sizes []
+DD GG HH GG EE GG
+HH AA JT AA DD EE
+WD JT JT GG WD JT
+EE GG EE CC GG JT
+WD BB AA JT HH CC
+AA HH EE AA EE BB
+
+**********************************************************Simulation #46*****************************************************************
+2x2 grid:
+DD WD
+HH DD
+2x2 grid has 0 clusters with sizes []
+DD WD
+HH DD
+
+4x4 grid:
+BB WD JT EE
+BB DD WD CC
+BB HH DD GG
+WD WD EE WD
+4x4 grid has 3 clusters with sizes [6, 4, 4]
+00 01 JT EE
+00 01 01 CC
+00 HH 01 GG
+02 02 02 02
+
+6x6 grid:
+AA WD CC AA JT GG
+BB BB WD JT EE BB
+GG BB DD WD CC AA
+HH BB HH DD GG AA
+DD WD WD EE WD DD
+AA DD BB AA JT WD
+6x6 grid has 4 clusters with sizes [9, 4, 4, 4]
+AA 00 CC AA JT GG
+00 00 01 JT EE BB
+GG 00 01 01 CC AA
+HH 00 HH 01 GG AA
+02 03 03 03 03 DD
+AA 02 00 AA JT WD
+
+**********************************************************Simulation #47*****************************************************************
+2x2 grid:
+WD WD
+EE AA
+2x2 grid has 0 clusters with sizes []
+WD WD
+EE AA
+
+4x4 grid:
+GG DD BB GG
+CC WD WD CC
+GG EE AA BB
+BB AA AA JT
+4x4 grid has 2 clusters with sizes [4, 5]
+GG DD BB GG
+00 01 01 00
+GG EE 01 BB
+BB 01 01 JT
+
+6x6 grid:
+WD JT GG WD HH DD
+DD GG DD BB GG BB
+JT CC WD WD CC DD
+WD GG EE AA BB AA
+HH BB AA AA JT BB
+CC GG EE JT GG AA
+6x6 grid has 3 clusters with sizes [4, 4, 5]
+WD JT GG 00 HH DD
+DD GG DD 00 GG BB
+JT 01 02 02 01 DD
+WD GG EE 02 BB AA
+HH BB 02 02 JT BB
+CC GG EE JT GG AA
+
+**********************************************************Simulation #48*****************************************************************
+2x2 grid:
+DD DD
+CC DD
+2x2 grid has 0 clusters with sizes []
+DD DD
+CC DD
+
+4x4 grid:
+GG WD JT CC
+DD DD DD WD
+JT CC DD GG
+GG WD GG HH
+4x4 grid has 1 clusters with sizes [6]
+GG 00 JT CC
+00 00 00 00
+JT CC 00 GG
+GG WD GG HH
+
+6x6 grid:
+JT DD GG WD JT JT
+DD GG WD JT CC AA
+HH DD DD DD WD GG
+GG JT CC DD GG AA
+JT GG WD GG HH WD
+BB GG WD JT GG CC
+6x6 grid has 3 clusters with sizes [4, 6, 5]
+JT DD 00 00 JT JT
+DD 00 01 JT CC AA
+HH 01 01 01 01 GG
+GG JT CC 01 GG AA
+JT 02 02 02 HH WD
+BB 02 02 JT GG CC
+
+**********************************************************Simulation #49*****************************************************************
+2x2 grid:
+EE WD
+BB WD
+2x2 grid has 0 clusters with sizes []
+EE WD
+BB WD
+
+4x4 grid:
+CC GG WD GG
+CC EE WD JT
+CC BB WD JT
+AA CC EE EE
+4x4 grid has 3 clusters with sizes [5, 6, 4]
+CC 00 02 00
+CC 01 02 JT
+CC 02 02 JT
+AA CC 01 01
+
+6x6 grid:
+JT JT WD BB BB EE
+EE CC GG WD GG CC
+CC CC EE WD JT HH
+WD CC BB WD JT DD
+JT AA CC EE EE DD
+AA DD HH HH HH GG
+6x6 grid has 4 clusters with sizes [7, 5, 6, 6]
+JT JT 02 00 00 EE
+EE 01 02 03 02 CC
+01 01 03 03 JT HH
+01 01 00 03 JT DD
+JT AA CC 03 03 DD
+AA DD HH HH HH GG
+
+**********************************************************Simulation #50*****************************************************************
+2x2 grid:
+WD GG
+DD AA
+2x2 grid has 0 clusters with sizes []
+WD GG
+DD AA
+
+4x4 grid:
+GG EE JT BB
+WD WD GG GG
+JT DD AA HH
+CC EE DD JT
+4x4 grid has 1 clusters with sizes [5]
+00 EE JT BB
+00 00 00 00
+JT DD AA HH
+CC EE DD JT
+
+6x6 grid:
+DD HH GG WD AA CC
+BB GG EE JT BB CC
+WD WD WD GG GG CC
+JT JT DD AA HH WD
+AA CC EE DD JT GG
+JT DD WD AA EE WD
+6x6 grid has 5 clusters with sizes [4, 4, 6, 4, 4]
+DD HH GG WD AA 00
+01 02 03 JT BB 00
+04 04 04 02 02 00
+JT JT 04 AA HH 00
+AA CC EE DD JT GG
+JT DD WD AA EE WD
+
+**********************************************************Simulation #51*****************************************************************
+2x2 grid:
+JT EE
+HH CC
+2x2 grid has 0 clusters with sizes []
+JT EE
+HH CC
+
+4x4 grid:
+EE EE CC DD
+GG JT EE GG
+AA HH CC BB
+EE HH WD HH
+4x4 grid has 1 clusters with sizes [4]
+EE EE CC DD
+GG JT EE GG
+AA 00 CC BB
+EE 00 00 00
+
+6x6 grid:
+WD WD GG AA EE DD
+WD EE EE CC DD DD
+CC GG JT EE GG HH
+GG AA HH CC BB GG
+EE EE HH WD HH DD
+BB CC CC EE JT JT
+6x6 grid has 4 clusters with sizes [4, 5, 4, 4]
+02 02 00 AA EE DD
+02 01 01 CC DD DD
+02 GG JT EE GG HH
+GG AA 03 CC BB GG
+EE EE 03 03 03 DD
+BB CC CC EE JT JT
+
+**********************************************************Simulation #52*****************************************************************
+2x2 grid:
+DD EE
+DD EE
+2x2 grid has 0 clusters with sizes []
+DD EE
+DD EE
+
+4x4 grid:
+GG EE BB GG
+BB DD EE EE
+EE DD EE BB
+EE BB GG JT
+4x4 grid has 0 clusters with sizes []
+GG EE BB GG
+BB DD EE EE
+EE DD EE BB
+EE BB GG JT
+
+6x6 grid:
+WD JT DD JT JT DD
+AA GG EE BB GG EE
+BB BB DD EE EE CC
+AA EE DD EE BB WD
+JT EE BB GG JT GG
+DD GG BB GG HH DD
+6x6 grid has 0 clusters with sizes []
+WD JT DD JT JT DD
+AA GG EE BB GG EE
+BB BB DD EE EE CC
+AA EE DD EE BB WD
+JT EE BB GG JT GG
+DD GG BB GG HH DD
+
+**********************************************************Simulation #53*****************************************************************
+2x2 grid:
+HH CC
+JT JT
+2x2 grid has 0 clusters with sizes []
+HH CC
+JT JT
+
+4x4 grid:
+EE AA CC HH
+JT HH CC WD
+WD JT JT HH
+JT HH WD CC
+4x4 grid has 0 clusters with sizes []
+EE AA CC HH
+JT HH CC WD
+WD JT JT HH
+JT HH WD CC
+
+6x6 grid:
+JT AA WD BB BB HH
+CC EE AA CC HH BB
+HH JT HH CC WD GG
+JT WD JT JT HH JT
+EE JT HH WD CC GG
+GG GG WD BB AA EE
+6x6 grid has 0 clusters with sizes []
+JT AA WD BB BB HH
+CC EE AA CC HH BB
+HH JT HH CC WD GG
+JT WD JT JT HH JT
+EE JT HH WD CC GG
+GG GG WD BB AA EE
+
+**********************************************************Simulation #54*****************************************************************
+2x2 grid:
+BB BB
+JT GG
+2x2 grid has 0 clusters with sizes []
+BB BB
+JT GG
+
+4x4 grid:
+CC HH GG HH
+GG BB BB JT
+AA JT GG GG
+DD DD BB EE
+4x4 grid has 0 clusters with sizes []
+CC HH GG HH
+GG BB BB JT
+AA JT GG GG
+DD DD BB EE
+
+6x6 grid:
+JT HH DD HH CC WD
+CC CC HH GG HH DD
+HH GG BB BB JT HH
+WD AA JT GG GG DD
+BB DD DD BB EE HH
+EE HH BB AA AA WD
+6x6 grid has 0 clusters with sizes []
+JT HH DD HH CC WD
+CC CC HH GG HH DD
+HH GG BB BB JT HH
+WD AA JT GG GG DD
+BB DD DD BB EE HH
+EE HH BB AA AA WD
+
+**********************************************************Simulation #55*****************************************************************
+2x2 grid:
+BB AA
+DD EE
+2x2 grid has 0 clusters with sizes []
+BB AA
+DD EE
+
+4x4 grid:
+HH BB AA EE
+WD BB AA CC
+GG DD EE WD
+AA GG WD EE
+4x4 grid has 1 clusters with sizes [4]
+HH BB AA EE
+WD BB AA CC
+GG DD 00 00
+AA GG 00 00
+
+6x6 grid:
+EE WD AA EE CC EE
+EE HH BB AA EE GG
+AA WD BB AA CC HH
+AA GG DD EE WD WD
+CC AA GG WD EE GG
+EE HH WD JT BB BB
+6x6 grid has 1 clusters with sizes [5]
+EE WD AA EE CC EE
+EE HH BB AA EE GG
+AA WD BB AA CC HH
+AA GG DD 00 00 00
+CC AA GG 00 00 GG
+EE HH WD JT BB BB
+
+**********************************************************Simulation #56*****************************************************************
+2x2 grid:
+CC GG
+CC GG
+2x2 grid has 0 clusters with sizes []
+CC GG
+CC GG
+
+4x4 grid:
+EE GG GG WD
+HH CC GG WD
+GG CC GG DD
+HH BB WD JT
+4x4 grid has 1 clusters with sizes [7]
+EE 00 00 00
+HH CC 00 00
+GG CC 00 DD
+HH BB 00 JT
+
+6x6 grid:
+CC JT EE WD HH BB
+BB EE GG GG WD EE
+WD HH CC GG WD HH
+GG GG CC GG DD HH
+WD HH BB WD JT CC
+HH AA CC AA EE HH
+6x6 grid has 3 clusters with sizes [6, 8, 4]
+CC JT EE 01 00 BB
+BB EE 01 01 01 EE
+02 HH CC 01 01 00
+02 02 CC 01 DD 00
+02 HH BB 01 JT CC
+HH AA CC AA EE HH
+
+**********************************************************Simulation #57*****************************************************************
+2x2 grid:
+GG GG
+EE CC
+2x2 grid has 0 clusters with sizes []
+GG GG
+EE CC
+
+4x4 grid:
+WD AA HH BB
+WD GG GG DD
+EE EE CC BB
+EE DD EE CC
+4x4 grid has 2 clusters with sizes [4, 5]
+01 AA HH BB
+01 00 00 DD
+01 01 CC BB
+01 DD EE CC
+
+6x6 grid:
+AA CC HH GG HH BB
+AA WD AA HH BB CC
+EE WD GG GG DD GG
+DD EE EE CC BB GG
+CC EE DD EE CC WD
+WD EE EE AA DD JT
+6x6 grid has 3 clusters with sizes [5, 9, 4]
+00 CC HH GG HH BB
+00 02 00 HH BB CC
+01 02 02 02 DD GG
+DD 01 01 CC BB GG
+CC 01 DD EE CC WD
+01 01 01 AA DD JT
+
+**********************************************************Simulation #58*****************************************************************
+2x2 grid:
+WD JT
+DD WD
+2x2 grid has 0 clusters with sizes []
+WD JT
+DD WD
+
+4x4 grid:
+EE HH BB AA
+BB WD JT AA
+HH DD WD HH
+JT EE GG HH
+4x4 grid has 0 clusters with sizes []
+EE HH BB AA
+BB WD JT AA
+HH DD WD HH
+JT EE GG HH
+
+6x6 grid:
+DD AA BB JT GG CC
+EE EE HH BB AA AA
+CC BB WD JT AA EE
+AA HH DD WD HH CC
+WD JT EE GG HH AA
+JT JT CC GG AA AA
+6x6 grid has 0 clusters with sizes []
+DD AA BB JT GG CC
+EE EE HH BB AA AA
+CC BB WD JT AA EE
+AA HH DD WD HH CC
+WD JT EE GG HH AA
+JT JT CC GG AA AA
+
+**********************************************************Simulation #59*****************************************************************
+2x2 grid:
+BB JT
+EE DD
+2x2 grid has 0 clusters with sizes []
+BB JT
+EE DD
+
+4x4 grid:
+CC JT EE EE
+CC BB JT BB
+DD EE DD WD
+CC AA GG JT
+4x4 grid has 0 clusters with sizes []
+CC JT EE EE
+CC BB JT BB
+DD EE DD WD
+CC AA GG JT
+
+6x6 grid:
+WD WD AA GG BB GG
+DD CC JT EE EE JT
+BB CC BB JT BB WD
+AA DD EE DD WD HH
+GG CC AA GG JT JT
+HH JT HH CC AA GG
+6x6 grid has 1 clusters with sizes [4]
+00 00 AA GG BB GG
+DD 00 JT EE EE JT
+BB 00 BB JT BB WD
+AA DD EE DD WD HH
+GG CC AA GG JT JT
+HH JT HH CC AA GG
+
+**********************************************************Simulation #60*****************************************************************
+2x2 grid:
+GG AA
+DD GG
+2x2 grid has 0 clusters with sizes []
+GG AA
+DD GG
+
+4x4 grid:
+DD JT HH BB
+AA GG AA GG
+BB DD GG EE
+WD HH WD AA
+4x4 grid has 0 clusters with sizes []
+DD JT HH BB
+AA GG AA GG
+BB DD GG EE
+WD HH WD AA
+
+6x6 grid:
+DD HH JT HH DD HH
+JT DD JT HH BB BB
+BB AA GG AA GG DD
+DD BB DD GG EE CC
+WD WD HH WD AA EE
+EE WD EE AA AA CC
+6x6 grid has 5 clusters with sizes [4, 4, 5, 4, 5]
+DD HH JT HH DD HH
+JT DD JT HH BB BB
+BB AA GG AA GG DD
+00 01 DD GG EE CC
+04 04 02 03 03 EE
+04 04 04 03 03 CC
+
+**********************************************************Simulation #61*****************************************************************
+2x2 grid:
+CC DD
+WD JT
+2x2 grid has 0 clusters with sizes []
+CC DD
+WD JT
+
+4x4 grid:
+EE AA GG DD
+JT CC DD JT
+AA WD JT GG
+AA JT AA HH
+4x4 grid has 0 clusters with sizes []
+EE AA GG DD
+JT CC DD JT
+AA WD JT GG
+AA JT AA HH
+
+6x6 grid:
+HH JT EE AA BB GG
+GG EE AA GG DD CC
+JT JT CC DD JT WD
+JT AA WD JT GG JT
+BB AA JT AA HH AA
+GG GG GG CC CC CC
+6x6 grid has 0 clusters with sizes []
+HH JT EE AA BB GG
+GG EE AA GG DD CC
+JT JT CC DD JT WD
+JT AA WD JT GG JT
+BB AA JT AA HH AA
+GG GG GG CC CC CC
+
+**********************************************************Simulation #62*****************************************************************
+2x2 grid:
+WD GG
+EE EE
+2x2 grid has 0 clusters with sizes []
+WD GG
+EE EE
+
+4x4 grid:
+DD GG DD DD
+EE WD GG DD
+DD EE EE BB
+EE AA DD EE
+4x4 grid has 1 clusters with sizes [4]
+DD GG DD DD
+00 00 GG DD
+DD 00 00 BB
+EE AA DD EE
+
+6x6 grid:
+CC WD JT WD DD EE
+GG DD GG DD DD GG
+EE EE WD GG DD CC
+EE DD EE EE BB JT
+DD EE AA DD EE DD
+DD EE JT DD BB WD
+6x6 grid has 2 clusters with sizes [5, 6]
+CC WD JT 00 00 EE
+GG DD GG 00 00 GG
+01 01 01 GG 00 CC
+01 DD 01 01 BB JT
+DD EE AA DD EE DD
+DD EE JT DD BB WD
+
+**********************************************************Simulation #63*****************************************************************
+2x2 grid:
+EE WD
+WD GG
+2x2 grid has 0 clusters with sizes []
+EE WD
+WD GG
+
+4x4 grid:
+EE HH HH EE
+EE EE WD AA
+DD WD GG CC
+DD WD BB CC
+4x4 grid has 3 clusters with sizes [6, 4, 4]
+00 HH HH EE
+00 00 02 AA
+01 02 02 CC
+01 02 BB CC
+
+6x6 grid:
+EE EE GG BB CC BB
+AA EE HH HH EE BB
+JT EE EE WD AA AA
+DD DD WD GG CC BB
+BB DD WD BB CC HH
+EE BB DD WD HH AA
+6x6 grid has 4 clusters with sizes [8, 7, 4, 4]
+00 00 GG BB CC BB
+AA 00 HH HH EE BB
+JT 00 00 02 AA AA
+01 01 03 02 CC BB
+BB 01 03 03 CC HH
+EE BB 01 03 HH AA
+
+**********************************************************Simulation #64*****************************************************************
+2x2 grid:
+CC HH
+CC JT
+2x2 grid has 0 clusters with sizes []
+CC HH
+CC JT
+
+4x4 grid:
+DD HH GG WD
+CC CC HH BB
+HH CC JT AA
+GG GG DD DD
+4x4 grid has 0 clusters with sizes []
+DD HH GG WD
+CC CC HH BB
+HH CC JT AA
+GG GG DD DD
+
+6x6 grid:
+GG BB CC DD JT DD
+HH DD HH GG WD AA
+BB CC CC HH BB DD
+JT HH CC JT AA EE
+JT GG GG DD DD CC
+HH AA BB WD JT WD
+6x6 grid has 0 clusters with sizes []
+GG BB CC DD JT DD
+HH DD HH GG WD AA
+BB CC CC HH BB DD
+JT HH CC JT AA EE
+JT GG GG DD DD CC
+HH AA BB WD JT WD
+
+**********************************************************Simulation #65*****************************************************************
+2x2 grid:
+WD GG
+CC CC
+2x2 grid has 0 clusters with sizes []
+WD GG
+CC CC
+
+4x4 grid:
+HH HH AA JT
+JT WD GG JT
+BB CC CC WD
+JT BB DD HH
+4x4 grid has 1 clusters with sizes [4]
+HH HH AA JT
+JT 00 GG JT
+BB 00 00 00
+JT BB DD HH
+
+6x6 grid:
+JT DD EE BB CC BB
+GG HH HH AA JT BB
+GG JT WD GG JT BB
+GG BB CC CC WD WD
+AA JT BB DD HH JT
+WD GG JT EE CC BB
+6x6 grid has 2 clusters with sizes [5, 5]
+JT DD EE BB CC 00
+GG HH HH AA JT 00
+GG JT 01 GG JT 00
+GG BB 01 01 01 01
+AA JT BB DD HH JT
+WD GG JT EE CC BB
+
+**********************************************************Simulation #66*****************************************************************
+2x2 grid:
+DD AA
+BB CC
+2x2 grid has 0 clusters with sizes []
+DD AA
+BB CC
+
+4x4 grid:
+HH HH HH AA
+DD DD AA WD
+BB BB CC EE
+GG DD AA BB
+4x4 grid has 0 clusters with sizes []
+HH HH HH AA
+DD DD AA WD
+BB BB CC EE
+GG DD AA BB
+
+6x6 grid:
+AA GG EE BB HH EE
+BB HH HH HH AA HH
+JT DD DD AA WD EE
+JT BB BB CC EE WD
+HH GG DD AA BB CC
+EE CC HH GG CC HH
+6x6 grid has 1 clusters with sizes [4]
+AA GG EE BB HH EE
+BB HH HH HH AA HH
+JT DD DD AA 00 00
+JT BB BB CC 00 00
+HH GG DD AA BB CC
+EE CC HH GG CC HH
+
+**********************************************************Simulation #67*****************************************************************
+2x2 grid:
+CC WD
+CC CC
+2x2 grid has 1 clusters with sizes [4]
+00 00
+00 00
+
+4x4 grid:
+AA JT HH EE
+DD CC WD WD
+WD CC CC DD
+CC HH HH GG
+4x4 grid has 1 clusters with sizes [7]
+AA JT HH EE
+DD 00 00 00
+00 00 00 DD
+00 HH HH GG
+
+6x6 grid:
+AA HH AA HH HH AA
+CC AA JT HH EE EE
+CC DD CC WD WD AA
+JT WD CC CC DD WD
+AA CC HH HH GG JT
+CC CC DD GG DD HH
+6x6 grid has 5 clusters with sizes [5, 4, 9, 4, 4]
+AA HH AA 00 00 AA
+CC AA JT 00 01 01
+CC DD 02 04 04 03
+JT 02 02 02 04 04
+AA 02 HH HH GG JT
+02 02 DD GG DD HH
+
+**********************************************************Simulation #68*****************************************************************
+2x2 grid:
+EE JT
+EE CC
+2x2 grid has 0 clusters with sizes []
+EE JT
+EE CC
+
+4x4 grid:
+CC JT EE AA
+GG EE JT HH
+GG EE CC GG
+AA CC WD GG
+4x4 grid has 0 clusters with sizes []
+CC JT EE AA
+GG EE JT HH
+GG EE CC GG
+AA CC WD GG
+
+6x6 grid:
+CC BB WD JT BB EE
+JT CC JT EE AA CC
+WD GG EE JT HH HH
+AA GG EE CC GG EE
+BB AA CC WD GG WD
+GG AA HH BB BB JT
+6x6 grid has 1 clusters with sizes [4]
+CC BB WD JT BB EE
+JT CC JT EE AA CC
+WD GG EE JT HH HH
+AA GG EE CC 00 EE
+BB AA CC 00 00 00
+GG AA HH BB BB JT
+
+**********************************************************Simulation #69*****************************************************************
+2x2 grid:
+AA GG
+JT DD
+2x2 grid has 0 clusters with sizes []
+AA GG
+JT DD
+
+4x4 grid:
+JT EE JT BB
+WD AA GG HH
+EE JT DD WD
+BB AA AA JT
+4x4 grid has 0 clusters with sizes []
+JT EE JT BB
+WD AA GG HH
+EE JT DD WD
+BB AA AA JT
+
+6x6 grid:
+WD EE GG WD AA DD
+BB JT EE JT BB HH
+WD WD AA GG HH WD
+CC EE JT DD WD BB
+HH BB AA AA JT CC
+EE WD JT HH HH AA
+6x6 grid has 2 clusters with sizes [4, 4]
+00 EE GG WD AA DD
+00 JT EE JT BB 01
+00 00 AA GG 01 01
+CC EE JT DD 01 BB
+HH BB AA AA JT CC
+EE WD JT HH HH AA
+
+**********************************************************Simulation #70*****************************************************************
+2x2 grid:
+BB BB
+CC GG
+2x2 grid has 0 clusters with sizes []
+BB BB
+CC GG
+
+4x4 grid:
+EE EE HH GG
+CC BB BB BB
+AA CC GG AA
+BB BB JT DD
+4x4 grid has 0 clusters with sizes []
+EE EE HH GG
+CC BB BB BB
+AA CC GG AA
+BB BB JT DD
+
+6x6 grid:
+AA AA GG EE WD DD
+WD EE EE HH GG JT
+HH CC BB BB BB WD
+JT AA CC GG AA HH
+CC BB BB JT DD BB
+CC EE EE EE GG CC
+6x6 grid has 1 clusters with sizes [4]
+AA AA GG EE WD DD
+WD EE EE HH GG JT
+HH CC 00 00 00 00
+JT AA CC GG AA HH
+CC BB BB JT DD BB
+CC EE EE EE GG CC
+
+**********************************************************Simulation #71*****************************************************************
+2x2 grid:
+EE EE
+WD GG
+2x2 grid has 0 clusters with sizes []
+EE EE
+WD GG
+
+4x4 grid:
+BB BB JT DD
+DD EE EE HH
+HH WD GG DD
+EE HH EE AA
+4x4 grid has 0 clusters with sizes []
+BB BB JT DD
+DD EE EE HH
+HH WD GG DD
+EE HH EE AA
+
+6x6 grid:
+GG GG DD GG GG GG
+HH BB BB JT DD EE
+GG DD EE EE HH HH
+EE HH WD GG DD CC
+CC EE HH EE AA EE
+GG EE DD JT DD BB
+6x6 grid has 0 clusters with sizes []
+GG GG DD GG GG GG
+HH BB BB JT DD EE
+GG DD EE EE HH HH
+EE HH WD GG DD CC
+CC EE HH EE AA EE
+GG EE DD JT DD BB
+
+**********************************************************Simulation #72*****************************************************************
+2x2 grid:
+GG BB
+AA AA
+2x2 grid has 0 clusters with sizes []
+GG BB
+AA AA
+
+4x4 grid:
+BB BB WD JT
+HH GG BB CC
+JT AA AA CC
+WD GG JT DD
+4x4 grid has 1 clusters with sizes [4]
+00 00 00 JT
+HH GG 00 CC
+JT AA AA CC
+WD GG JT DD
+
+6x6 grid:
+DD DD CC DD JT EE
+EE BB BB WD JT DD
+AA HH GG BB CC DD
+EE JT AA AA CC WD
+CC WD GG JT DD CC
+BB AA HH HH HH JT
+6x6 grid has 2 clusters with sizes [4, 4]
+DD DD CC DD JT EE
+EE 00 00 00 JT DD
+AA HH GG 00 01 DD
+EE JT AA AA 01 01
+CC WD GG JT DD 01
+BB AA HH HH HH JT
+
+**********************************************************Simulation #73*****************************************************************
+2x2 grid:
+CC CC
+WD JT
+2x2 grid has 0 clusters with sizes []
+CC CC
+WD JT
+
+4x4 grid:
+WD AA DD WD
+GG CC CC AA
+AA WD JT WD
+GG BB DD GG
+4x4 grid has 0 clusters with sizes []
+WD AA DD WD
+GG CC CC AA
+AA WD JT WD
+GG BB DD GG
+
+6x6 grid:
+AA DD EE GG CC HH
+BB WD AA DD WD JT
+AA GG CC CC AA HH
+CC AA WD JT WD BB
+AA GG BB DD GG WD
+AA CC CC BB DD EE
+6x6 grid has 0 clusters with sizes []
+AA DD EE GG CC HH
+BB WD AA DD WD JT
+AA GG CC CC AA HH
+CC AA WD JT WD BB
+AA GG BB DD GG WD
+AA CC CC BB DD EE
+
+**********************************************************Simulation #74*****************************************************************
+2x2 grid:
+JT HH
+CC WD
+2x2 grid has 0 clusters with sizes []
+JT HH
+CC WD
+
+4x4 grid:
+HH AA CC BB
+CC JT HH EE
+BB CC WD CC
+HH AA CC AA
+4x4 grid has 1 clusters with sizes [4]
+HH AA CC BB
+CC JT HH EE
+BB 00 00 00
+HH AA 00 AA
+
+6x6 grid:
+WD GG AA BB EE CC
+JT HH AA CC BB DD
+WD CC JT HH EE WD
+BB BB CC WD CC AA
+HH HH AA CC AA HH
+AA BB EE HH GG CC
+6x6 grid has 1 clusters with sizes [4]
+WD GG AA BB EE CC
+JT HH AA CC BB DD
+WD CC JT HH EE WD
+BB BB 00 00 00 AA
+HH HH AA 00 AA HH
+AA BB EE HH GG CC
+
+**********************************************************Simulation #75*****************************************************************
+2x2 grid:
+DD DD
+GG CC
+2x2 grid has 0 clusters with sizes []
+DD DD
+GG CC
+
+4x4 grid:
+AA GG WD WD
+JT DD DD GG
+CC GG CC BB
+CC AA EE DD
+4x4 grid has 2 clusters with sizes [4, 4]
+AA 00 01 01
+JT 01 01 00
+CC GG CC BB
+CC AA EE DD
+
+6x6 grid:
+AA JT EE CC WD GG
+AA AA GG WD WD CC
+WD JT DD DD GG CC
+EE CC GG CC BB GG
+JT CC AA EE DD WD
+AA JT JT DD BB AA
+6x6 grid has 4 clusters with sizes [4, 6, 6, 5]
+00 JT EE 01 03 02
+00 00 02 03 03 01
+00 JT 03 03 02 01
+EE CC GG CC BB GG
+JT CC AA EE DD WD
+AA JT JT DD BB AA
+
+**********************************************************Simulation #76*****************************************************************
+2x2 grid:
+DD GG
+EE GG
+2x2 grid has 0 clusters with sizes []
+DD GG
+EE GG
+
+4x4 grid:
+GG CC JT GG
+GG DD GG DD
+HH EE GG BB
+AA BB CC GG
+4x4 grid has 0 clusters with sizes []
+GG CC JT GG
+GG DD GG DD
+HH EE GG BB
+AA BB CC GG
+
+6x6 grid:
+EE GG AA WD EE GG
+GG GG CC JT GG HH
+GG GG DD GG DD HH
+JT HH EE GG BB WD
+HH AA BB CC GG CC
+GG AA CC GG EE CC
+6x6 grid has 1 clusters with sizes [5]
+EE 00 AA WD EE GG
+00 00 CC JT GG HH
+00 00 DD GG DD HH
+JT HH EE GG BB WD
+HH AA BB CC GG CC
+GG AA CC GG EE CC
+
+**********************************************************Simulation #77*****************************************************************
+2x2 grid:
+BB AA
+DD DD
+2x2 grid has 0 clusters with sizes []
+BB AA
+DD DD
+
+4x4 grid:
+DD DD WD AA
+CC BB AA HH
+HH DD DD GG
+EE BB DD GG
+4x4 grid has 0 clusters with sizes []
+DD DD WD AA
+CC BB AA HH
+HH DD DD GG
+EE BB DD GG
+
+6x6 grid:
+HH CC HH BB HH BB
+GG DD DD WD AA WD
+CC CC BB AA HH BB
+JT HH DD DD GG BB
+JT EE BB DD GG AA
+EE WD EE AA CC JT
+6x6 grid has 3 clusters with sizes [4, 4, 4]
+HH CC HH BB HH 00
+GG DD DD 01 01 01
+CC CC BB 01 HH 00
+JT HH DD DD GG 00
+JT 02 BB DD GG AA
+02 02 02 AA CC JT
+
+**********************************************************Simulation #78*****************************************************************
+2x2 grid:
+CC GG
+AA GG
+2x2 grid has 0 clusters with sizes []
+CC GG
+AA GG
+
+4x4 grid:
+EE EE HH EE
+EE CC GG BB
+CC AA GG EE
+AA BB CC JT
+4x4 grid has 0 clusters with sizes []
+EE EE HH EE
+EE CC GG BB
+CC AA GG EE
+AA BB CC JT
+
+6x6 grid:
+BB CC CC DD WD HH
+CC EE EE HH EE EE
+JT EE CC GG BB HH
+AA CC AA GG EE JT
+EE AA BB CC JT GG
+CC AA WD CC CC AA
+6x6 grid has 1 clusters with sizes [4]
+BB CC CC DD WD HH
+CC EE EE HH EE EE
+JT EE CC GG BB HH
+AA CC AA GG EE JT
+EE AA BB 00 JT GG
+CC AA 00 00 00 AA
+
+**********************************************************Simulation #79*****************************************************************
+2x2 grid:
+EE GG
+DD DD
+2x2 grid has 0 clusters with sizes []
+EE GG
+DD DD
+
+4x4 grid:
+EE WD EE DD
+WD EE GG GG
+WD DD DD HH
+EE WD CC CC
+4x4 grid has 2 clusters with sizes [8, 5]
+00 00 00 DD
+01 00 GG GG
+01 01 01 HH
+00 01 CC CC
+
+6x6 grid:
+JT EE BB JT CC BB
+BB EE WD EE DD AA
+EE WD EE GG GG BB
+WD WD DD DD HH BB
+BB EE WD CC CC EE
+AA GG GG AA EE AA
+6x6 grid has 3 clusters with sizes [11, 6, 4]
+JT 00 BB JT CC BB
+BB 00 00 00 DD AA
+00 02 00 GG GG BB
+02 02 01 01 HH BB
+02 00 01 CC CC EE
+AA GG GG AA EE AA
+
+**********************************************************Simulation #80*****************************************************************
+2x2 grid:
+DD JT
+DD EE
+2x2 grid has 0 clusters with sizes []
+DD JT
+DD EE
+
+4x4 grid:
+BB GG HH HH
+HH DD JT JT
+GG DD EE GG
+GG GG GG HH
+4x4 grid has 1 clusters with sizes [4]
+BB GG HH HH
+HH DD JT JT
+00 DD EE GG
+00 00 00 HH
+
+6x6 grid:
+EE JT DD BB BB CC
+AA BB GG HH HH EE
+GG HH DD JT JT CC
+BB GG DD EE GG JT
+HH GG GG GG HH EE
+BB BB JT HH CC CC
+6x6 grid has 1 clusters with sizes [4]
+EE JT DD BB BB CC
+AA BB GG HH HH EE
+GG HH DD JT JT CC
+BB 00 DD EE GG JT
+HH 00 00 00 HH EE
+BB BB JT HH CC CC
+
+**********************************************************Simulation #81*****************************************************************
+2x2 grid:
+EE EE
+BB BB
+2x2 grid has 0 clusters with sizes []
+EE EE
+BB BB
+
+4x4 grid:
+HH EE CC HH
+AA EE EE JT
+GG BB BB CC
+JT JT JT BB
+4x4 grid has 0 clusters with sizes []
+HH EE CC HH
+AA EE EE JT
+GG BB BB CC
+JT JT JT BB
+
+6x6 grid:
+WD GG BB CC WD JT
+WD HH EE CC HH JT
+WD AA EE EE JT CC
+EE GG BB BB CC DD
+WD JT JT JT BB AA
+JT DD JT BB EE EE
+6x6 grid has 4 clusters with sizes [4, 4, 4, 5]
+03 00 BB CC WD JT
+03 01 EE CC HH JT
+03 02 EE EE JT CC
+03 GG BB BB CC DD
+03 JT JT JT BB AA
+JT DD JT BB EE EE
+
+**********************************************************Simulation #82*****************************************************************
+2x2 grid:
+AA JT
+GG JT
+2x2 grid has 0 clusters with sizes []
+AA JT
+GG JT
+
+4x4 grid:
+GG BB DD WD
+CC AA JT EE
+DD GG JT HH
+HH AA EE CC
+4x4 grid has 0 clusters with sizes []
+GG BB DD WD
+CC AA JT EE
+DD GG JT HH
+HH AA EE CC
+
+6x6 grid:
+GG WD JT WD WD DD
+WD GG BB DD WD EE
+AA CC AA JT EE BB
+AA DD GG JT HH BB
+EE HH AA EE CC WD
+HH DD JT AA DD EE
+6x6 grid has 3 clusters with sizes [4, 5, 5]
+00 00 JT 02 02 01
+00 00 BB 01 02 02
+AA CC AA JT 02 BB
+AA DD GG JT HH BB
+EE HH AA EE CC WD
+HH DD JT AA DD EE
+
+**********************************************************Simulation #83*****************************************************************
+2x2 grid:
+WD JT
+BB JT
+2x2 grid has 0 clusters with sizes []
+WD JT
+BB JT
+
+4x4 grid:
+WD WD CC CC
+WD WD JT EE
+JT BB JT WD
+CC CC EE EE
+4x4 grid has 3 clusters with sizes [6, 4, 5]
+02 02 00 00
+02 02 JT 01
+JT 02 JT 01
+CC CC 01 01
+
+6x6 grid:
+EE JT AA JT CC BB
+HH WD WD CC CC WD
+GG WD WD JT EE HH
+CC JT BB JT WD HH
+BB CC CC EE EE GG
+JT GG CC CC CC GG
+6x6 grid has 8 clusters with sizes [5, 8, 5, 5, 4, 4, 5, 5]
+EE JT 00 JT 01 BB
+02 06 06 01 01 05
+03 06 06 JT 04 05
+CC JT 06 JT 05 05
+BB 07 07 04 04 GG
+JT GG 07 07 07 GG
+
+**********************************************************Simulation #84*****************************************************************
+2x2 grid:
+EE WD
+GG JT
+2x2 grid has 0 clusters with sizes []
+EE WD
+GG JT
+
+4x4 grid:
+EE EE BB CC
+HH EE WD BB
+JT GG JT HH
+HH HH HH BB
+4x4 grid has 1 clusters with sizes [4]
+00 00 BB CC
+HH 00 00 BB
+JT GG JT HH
+HH HH HH BB
+
+6x6 grid:
+GG CC CC EE JT BB
+JT EE EE BB CC GG
+AA HH EE WD BB CC
+JT JT GG JT HH DD
+WD HH HH HH BB CC
+CC BB WD BB DD AA
+6x6 grid has 2 clusters with sizes [4, 5]
+GG CC CC EE JT BB
+JT 00 00 BB CC GG
+AA HH 00 00 BB CC
+JT JT GG JT HH DD
+01 01 01 01 BB CC
+CC BB 01 BB DD AA
+
+**********************************************************Simulation #85*****************************************************************
+2x2 grid:
+HH HH
+WD HH
+2x2 grid has 1 clusters with sizes [4]
+00 00
+00 00
+
+4x4 grid:
+CC AA EE JT
+BB HH HH DD
+WD WD HH EE
+CC WD EE BB
+4x4 grid has 4 clusters with sizes [4, 6, 4, 4]
+CC AA EE JT
+00 01 01 DD
+03 03 01 EE
+02 03 03 BB
+
+6x6 grid:
+GG BB BB AA GG AA
+AA CC AA EE JT EE
+AA BB HH HH DD BB
+HH WD WD HH EE WD
+GG CC WD EE BB EE
+GG GG DD WD EE EE
+6x6 grid has 5 clusters with sizes [4, 7, 10, 4, 5]
+GG BB BB AA GG AA
+AA CC AA EE JT EE
+AA 00 01 01 DD BB
+01 04 04 01 02 02
+GG 03 04 02 BB 02
+GG GG 04 04 02 02
+
+**********************************************************Simulation #86*****************************************************************
+2x2 grid:
+AA GG
+CC HH
+2x2 grid has 0 clusters with sizes []
+AA GG
+CC HH
+
+4x4 grid:
+CC CC EE WD
+BB AA GG DD
+BB CC HH CC
+HH WD BB GG
+4x4 grid has 0 clusters with sizes []
+CC CC EE WD
+BB AA GG DD
+BB CC HH CC
+HH WD BB GG
+
+6x6 grid:
+JT WD HH HH HH HH
+CC CC CC EE WD CC
+HH BB AA GG DD GG
+GG BB CC HH CC HH
+JT HH WD BB GG HH
+JT GG GG DD DD EE
+6x6 grid has 2 clusters with sizes [6, 4]
+JT 01 00 00 00 00
+01 01 01 EE 00 CC
+HH BB AA GG DD GG
+GG BB CC HH CC HH
+JT HH WD BB GG HH
+JT GG GG DD DD EE
+
+**********************************************************Simulation #87*****************************************************************
+2x2 grid:
+DD AA
+AA EE
+2x2 grid has 0 clusters with sizes []
+DD AA
+AA EE
+
+4x4 grid:
+HH BB DD HH
+AA DD AA JT
+EE AA EE BB
+JT DD WD DD
+4x4 grid has 0 clusters with sizes []
+HH BB DD HH
+AA DD AA JT
+EE AA EE BB
+JT DD WD DD
+
+6x6 grid:
+HH BB AA DD EE GG
+GG HH BB DD HH WD
+WD AA DD AA JT EE
+GG EE AA EE BB EE
+DD JT DD WD DD GG
+GG EE DD EE JT BB
+6x6 grid has 1 clusters with sizes [4]
+HH BB AA DD EE GG
+GG HH BB DD HH WD
+WD AA DD AA JT EE
+GG EE AA EE BB EE
+DD JT 00 00 00 GG
+GG EE 00 EE JT BB
+
+**********************************************************Simulation #88*****************************************************************
+2x2 grid:
+AA GG
+GG DD
+2x2 grid has 0 clusters with sizes []
+AA GG
+GG DD
+
+4x4 grid:
+AA GG JT CC
+JT AA GG GG
+DD GG DD GG
+JT EE EE GG
+4x4 grid has 1 clusters with sizes [4]
+AA GG JT CC
+JT AA 00 00
+DD GG DD 00
+JT EE EE 00
+
+6x6 grid:
+DD AA JT JT JT AA
+JT AA GG JT CC AA
+EE JT AA GG GG GG
+EE DD GG DD GG BB
+EE JT EE EE GG JT
+HH HH JT HH EE DD
+6x6 grid has 1 clusters with sizes [5]
+DD AA JT JT JT AA
+JT AA GG JT CC AA
+EE JT AA 00 00 00
+EE DD GG DD 00 BB
+EE JT EE EE 00 JT
+HH HH JT HH EE DD
+
+**********************************************************Simulation #89*****************************************************************
+2x2 grid:
+AA BB
+WD WD
+2x2 grid has 0 clusters with sizes []
+AA BB
+WD WD
+
+4x4 grid:
+HH EE EE JT
+WD AA BB HH
+DD WD WD GG
+CC HH BB JT
+4x4 grid has 3 clusters with sizes [4, 4, 4]
+HH EE EE JT
+02 00 01 HH
+02 02 02 GG
+CC HH 01 JT
+
+6x6 grid:
+AA HH GG CC JT WD
+BB HH EE EE JT AA
+HH WD AA BB HH HH
+BB DD WD WD GG WD
+CC CC HH BB JT JT
+HH CC AA BB CC BB
+6x6 grid has 5 clusters with sizes [4, 4, 5, 4, 4]
+AA 00 GG CC JT WD
+BB 00 EE EE JT AA
+00 03 01 02 HH HH
+BB 03 04 04 04 04
+CC CC HH 02 JT JT
+HH CC AA 02 CC BB
+
+**********************************************************Simulation #90*****************************************************************
+2x2 grid:
+HH HH
+HH DD
+2x2 grid has 0 clusters with sizes []
+HH HH
+HH DD
+
+4x4 grid:
+AA GG EE WD
+JT HH HH DD
+GG HH DD HH
+CC JT GG CC
+4x4 grid has 0 clusters with sizes []
+AA GG EE WD
+JT HH HH DD
+GG HH DD HH
+CC JT GG CC
+
+6x6 grid:
+EE WD GG DD CC WD
+CC AA GG EE WD JT
+EE JT HH HH DD DD
+AA GG HH DD HH AA
+HH CC JT GG CC EE
+CC EE AA CC GG GG
+6x6 grid has 0 clusters with sizes []
+EE WD GG DD CC WD
+CC AA GG EE WD JT
+EE JT HH HH DD DD
+AA GG HH DD HH AA
+HH CC JT GG CC EE
+CC EE AA CC GG GG
+
+**********************************************************Simulation #91*****************************************************************
+2x2 grid:
+WD WD
+CC CC
+2x2 grid has 1 clusters with sizes [4]
+00 00
+00 00
+
+4x4 grid:
+HH WD HH AA
+CC WD WD HH
+HH CC CC AA
+WD BB WD CC
+4x4 grid has 2 clusters with sizes [6, 8]
+00 01 00 AA
+01 01 01 00
+HH 01 01 AA
+WD BB 01 01
+
+6x6 grid:
+EE CC HH WD WD EE
+JT HH WD HH AA WD
+JT CC WD WD HH GG
+WD HH CC CC AA DD
+JT WD BB WD CC CC
+WD EE AA WD GG HH
+6x6 grid has 5 clusters with sizes [9, 4, 4, 10, 4]
+EE CC 00 02 02 01
+JT 00 03 00 02 02
+JT 03 03 03 00 GG
+WD HH 03 03 AA DD
+JT 04 04 04 03 03
+WD EE AA 04 GG HH
+
+**********************************************************Simulation #92*****************************************************************
+2x2 grid:
+DD CC
+HH WD
+2x2 grid has 0 clusters with sizes []
+DD CC
+HH WD
+
+4x4 grid:
+JT EE DD GG
+AA DD CC GG
+WD HH WD JT
+AA EE WD EE
+4x4 grid has 2 clusters with sizes [4, 4]
+JT EE DD GG
+AA DD CC GG
+00 00 01 JT
+AA 01 01 01
+
+6x6 grid:
+WD BB AA CC JT EE
+EE JT EE DD GG GG
+WD AA DD CC GG GG
+CC WD HH WD JT EE
+WD AA EE WD EE WD
+HH WD GG GG EE DD
+6x6 grid has 6 clusters with sizes [4, 6, 4, 4, 7, 5]
+WD BB AA CC JT EE
+EE JT EE DD 00 00
+02 01 DD CC 00 00
+02 03 03 05 JT 04
+02 01 04 05 04 04
+HH 05 05 05 04 DD
+
+**********************************************************Simulation #93*****************************************************************
+2x2 grid:
+GG GG
+JT AA
+2x2 grid has 0 clusters with sizes []
+GG GG
+JT AA
+
+4x4 grid:
+DD AA AA HH
+JT GG GG BB
+AA JT AA DD
+BB AA CC DD
+4x4 grid has 0 clusters with sizes []
+DD AA AA HH
+JT GG GG BB
+AA JT AA DD
+BB AA CC DD
+
+6x6 grid:
+GG EE HH JT JT GG
+BB DD AA AA HH WD
+EE JT GG GG BB GG
+GG AA JT AA DD CC
+DD BB AA CC DD CC
+DD EE DD EE AA WD
+6x6 grid has 0 clusters with sizes []
+GG EE HH JT JT GG
+BB DD AA AA HH WD
+EE JT GG GG BB GG
+GG AA JT AA DD CC
+DD BB AA CC DD CC
+DD EE DD EE AA WD
+
+**********************************************************Simulation #94*****************************************************************
+2x2 grid:
+EE JT
+HH AA
+2x2 grid has 0 clusters with sizes []
+EE JT
+HH AA
+
+4x4 grid:
+EE JT GG BB
+HH EE JT JT
+HH HH AA EE
+WD BB CC DD
+4x4 grid has 1 clusters with sizes [4]
+EE JT GG BB
+00 EE JT JT
+00 00 AA EE
+00 BB CC DD
+
+6x6 grid:
+EE HH AA BB AA CC
+HH EE JT GG BB GG
+WD HH EE JT JT CC
+GG HH HH AA EE WD
+BB WD BB CC DD AA
+WD GG BB GG AA AA
+6x6 grid has 3 clusters with sizes [6, 5, 4]
+EE HH AA BB AA CC
+00 EE JT GG BB GG
+00 00 EE JT JT CC
+GG 00 00 AA EE 02
+01 01 01 CC DD 02
+01 GG 01 GG 02 02
+
+**********************************************************Simulation #95*****************************************************************
+2x2 grid:
+HH EE
+AA BB
+2x2 grid has 0 clusters with sizes []
+HH EE
+AA BB
+
+4x4 grid:
+HH EE EE BB
+JT HH EE HH
+GG AA BB CC
+EE EE GG JT
+4x4 grid has 0 clusters with sizes []
+HH EE EE BB
+JT HH EE HH
+GG AA BB CC
+EE EE GG JT
+
+6x6 grid:
+DD JT DD WD AA EE
+GG HH EE EE BB HH
+GG JT HH EE HH DD
+GG GG AA BB CC BB
+JT EE EE GG JT JT
+HH GG CC DD EE WD
+6x6 grid has 2 clusters with sizes [4, 4]
+DD JT DD 01 AA EE
+00 HH 01 01 BB HH
+00 JT HH 01 HH DD
+00 00 AA BB CC BB
+JT EE EE GG JT JT
+HH GG CC DD EE WD
+
+**********************************************************Simulation #96*****************************************************************
+2x2 grid:
+WD BB
+GG DD
+2x2 grid has 0 clusters with sizes []
+WD BB
+GG DD
+
+4x4 grid:
+BB CC GG DD
+EE WD BB WD
+GG GG DD DD
+WD EE EE GG
+4x4 grid has 2 clusters with sizes [4, 4]
+BB CC GG 00
+EE 01 BB 00
+01 01 00 00
+01 EE EE GG
+
+6x6 grid:
+DD HH AA CC HH HH
+JT BB CC GG DD WD
+HH EE WD BB WD GG
+EE GG GG DD DD HH
+WD WD EE EE GG GG
+JT EE AA HH BB WD
+6x6 grid has 3 clusters with sizes [5, 6, 5]
+DD HH AA CC HH HH
+JT BB CC GG 00 00
+HH EE 02 BB 00 GG
+01 02 02 00 00 HH
+02 02 01 01 GG GG
+JT 01 AA HH BB WD
+
+**********************************************************Simulation #97*****************************************************************
+2x2 grid:
+WD EE
+EE HH
+2x2 grid has 0 clusters with sizes []
+WD EE
+EE HH
+
+4x4 grid:
+CC GG DD GG
+DD WD EE JT
+DD EE HH EE
+BB HH AA BB
+4x4 grid has 0 clusters with sizes []
+CC GG DD GG
+DD WD EE JT
+DD EE HH EE
+BB HH AA BB
+
+6x6 grid:
+EE WD EE BB WD AA
+EE CC GG DD GG WD
+DD DD WD EE JT DD
+HH DD EE HH EE HH
+CC BB HH AA BB CC
+EE HH WD GG AA WD
+6x6 grid has 2 clusters with sizes [4, 4]
+00 00 00 BB WD AA
+00 CC GG DD GG WD
+01 01 01 EE JT DD
+HH 01 EE HH EE HH
+CC BB HH AA BB CC
+EE HH WD GG AA WD
+
+**********************************************************Simulation #98*****************************************************************
+2x2 grid:
+AA BB
+EE EE
+2x2 grid has 0 clusters with sizes []
+AA BB
+EE EE
+
+4x4 grid:
+HH DD JT HH
+GG AA BB EE
+DD EE EE HH
+JT EE WD GG
+4x4 grid has 1 clusters with sizes [4]
+HH DD JT HH
+GG AA BB EE
+DD 00 00 HH
+JT 00 00 GG
+
+6x6 grid:
+JT WD DD CC JT WD
+HH HH DD JT HH BB
+EE GG AA BB EE HH
+CC DD EE EE HH WD
+EE JT EE WD GG HH
+JT GG HH GG WD BB
+6x6 grid has 3 clusters with sizes [4, 4, 4]
+JT WD DD CC JT WD
+HH HH DD JT HH BB
+EE GG AA BB EE 00
+CC DD 01 01 00 00
+EE JT 01 02 02 00
+JT GG HH 02 02 BB
+
+**********************************************************Simulation #99*****************************************************************
+2x2 grid:
+BB CC
+BB BB
+2x2 grid has 0 clusters with sizes []
+BB CC
+BB BB
+
+4x4 grid:
+EE DD WD DD
+DD BB CC JT
+BB BB BB WD
+DD JT WD BB
+4x4 grid has 1 clusters with sizes [7]
+EE DD WD DD
+DD 00 CC JT
+00 00 00 00
+DD JT 00 00
+
+6x6 grid:
+BB WD CC GG HH DD
+JT EE DD WD DD WD
+DD DD BB CC JT CC
+WD BB BB BB WD JT
+EE DD JT WD BB EE
+WD BB HH EE WD GG
+6x6 grid has 2 clusters with sizes [5, 9]
+BB WD CC GG HH 00
+JT EE 00 00 00 00
+DD DD 01 CC JT CC
+01 01 01 01 01 JT
+EE DD JT 01 01 EE
+WD BB HH EE 01 GG
+
+**********************************************************Simulation #100*****************************************************************
+2x2 grid:
+EE DD
+BB DD
+2x2 grid has 0 clusters with sizes []
+EE DD
+BB DD
+
+4x4 grid:
+BB WD BB DD
+DD EE DD WD
+BB BB DD EE
+DD HH WD JT
+4x4 grid has 1 clusters with sizes [5]
+BB WD BB 00
+DD EE 00 00
+BB BB 00 EE
+DD HH 00 JT
+
+6x6 grid:
+EE AA BB DD HH AA
+CC BB WD BB DD CC
+EE DD EE DD WD DD
+JT BB BB DD EE HH
+CC DD HH WD JT EE
+HH CC HH EE JT WD
+6x6 grid has 2 clusters with sizes [4, 6]
+EE AA 00 DD HH AA
+CC 00 00 00 01 CC
+EE DD EE 01 01 01
+JT BB BB 01 EE HH
+CC DD HH 01 JT EE
+HH CC HH EE JT WD
+

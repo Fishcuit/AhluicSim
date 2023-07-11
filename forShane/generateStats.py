@@ -17,9 +17,9 @@ def get_sub_grids(grid):
     return grid_2x2, grid_4x4
 
 
-def dfs(i, j, grid, wild='WD'):
+def dfs(i, j, grid, wild='WD', non_cluster_symbols=('JT', 'BT')):
     symbol = grid[i][j]
-    if symbol == wild:
+    if symbol in non_cluster_symbols or symbol == wild:
         return set(), ''
 
     stack = [(i, j)]
@@ -40,7 +40,7 @@ def dfs(i, j, grid, wild='WD'):
     return cluster_cells if len(cluster_cells) >= 4 else set(), symbol
 
 
-def dfs_wild(i, j, grid, wild='WD'):
+def dfs_wild(i, j, grid, wild='WD', non_cluster_symbols=('JT', 'BT')):
     symbol = grid[i][j]
     if symbol != wild:
         return set(), ''
@@ -56,10 +56,12 @@ def dfs_wild(i, j, grid, wild='WD'):
         cluster_cells.add((x, y))
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
-            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] == wild:
-                stack.append((nx, ny))
+            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
+                if grid[nx][ny] == wild:
+                    stack.append((nx, ny))
 
     return cluster_cells if len(cluster_cells) >= 4 else set(), symbol
+
 
 
 def count_clusters(grid):

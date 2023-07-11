@@ -2,7 +2,7 @@ import random
 from collections import defaultdict
 
 def generate_random_grid(n_rows, n_cols):
-    symbols = ['BB', 'AA', 'HH', 'GG', 'WD', 'CC', 'JT', 'EE', 'DD']
+    symbols = ['BB', 'AA', 'HH', 'GG', 'WD', 'CC', 'JT', 'EE', 'DD', 'BT']
     grid = [[random.choice(symbols) for _ in range(n_cols)]
             for _ in range(n_rows)]
     return grid
@@ -18,9 +18,9 @@ def get_sub_grids(grid):
 
 
 #This dfs function will count the cluster for specific symbols with wilds.
-def dfs(i, j, grid, wild='WD'):
+def dfs(i, j, grid, wild='WD', non_cluster_symbols=('JT', 'BT')):
     symbol = grid[i][j]
-    if symbol == wild:
+    if symbol in non_cluster_symbols or symbol == wild:
         return set()
 
     stack = [(i, j)]
@@ -35,13 +35,14 @@ def dfs(i, j, grid, wild='WD'):
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]):
-                if grid[nx][ny] == symbol or grid[nx][ny] == wild:
+                if grid[nx][ny] not in non_cluster_symbols and (grid[nx][ny] == symbol or grid[nx][ny] == wild):
                     stack.append((nx, ny))
 
     return cluster_cells if len(cluster_cells) >= 4 else set()
 
-#I am separating the wild card function from the dfs function, this dfs function will count clusters of wild symbols only if they have no adjacent symbols;
-def dfs_wild(i, j, grid, wild='WD'):
+
+# I am separating the wild card function from the dfs function, this dfs function will count clusters of wild symbols only if they have no adjacent symbols;
+def dfs_wild(i, j, grid, non_cluster_symbols=['JT', 'BT'], wild='WD'):
     symbol = grid[i][j]
     if symbol != wild:
         return set()
@@ -57,8 +58,14 @@ def dfs_wild(i, j, grid, wild='WD'):
         cluster_cells.add((x, y))
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
-            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] == wild:
-                stack.append((nx, ny))
+            if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and (nx, ny) not in visited:
+                if grid[nx][ny] == wild:
+                    stack.append((nx, ny))
+        cluster_cells = set(cell for cell in cluster_cells if all(
+            0 > nx or nx >= len(grid) or 0 > ny or ny >= len(grid[0]) or grid[nx][ny] == wild or grid[nx][ny] in non_cluster_symbols
+            for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]
+            for nx, ny in [(cell[0] + dx, cell[1] + dy)]
+        ))
 
     return cluster_cells if len(cluster_cells) >= 4 else set()
 

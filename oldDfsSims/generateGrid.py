@@ -1,7 +1,7 @@
 import random
 
 def generate_random_grid(n_rows, n_cols):
-    symbols = ['⭐', '🟩', '🔷', '🔶', '🃏']
+    symbols = ['BB', 'AA', 'HH', 'GG', 'WD', 'CC', 'JT', 'EE', 'DD', 'BT']
     grid = [[random.choice(symbols) for _ in range(n_cols)] for _ in range(n_rows)]
     return grid
 

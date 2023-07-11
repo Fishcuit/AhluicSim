@@ -1,0 +1,247 @@
+
+
+****** 2x2 ******
+
+--- DD ---
+Size 4: 2295 times
+
+--- HH ---
+Size 4: 2327 times
+
+--- EE ---
+Size 4: 2180 times
+
+--- BB ---
+Size 4: 2315 times
+
+--- GG ---
+Size 4: 2333 times
+
+--- AA ---
+Size 4: 2298 times
+
+--- CC ---
+Size 4: 2338 times
+
+--- WD ---
+Size 4: 144 times
+
+
+****** 4x4 ******
+
+--- EE ---
+Size 4: 62599 times
+Size 6: 11652 times
+Size 5: 27261 times
+Size 9: 601 times
+Size 7: 4627 times
+Size 10: 152 times
+Size 8: 1720 times
+Size 11: 43 times
+Size 12: 7 times
+
+--- GG ---
+Size 4: 62632 times
+Size 5: 27610 times
+Size 6: 11742 times
+Size 9: 602 times
+Size 7: 4786 times
+Size 8: 1810 times
+Size 10: 159 times
+Size 11: 37 times
+Size 12: 6 times
+Size 13: 1 times
+
+--- DD ---
+Size 7: 4759 times
+Size 5: 27194 times
+Size 4: 62229 times
+Size 6: 11781 times
+Size 9: 588 times
+Size 8: 1765 times
+Size 10: 164 times
+Size 11: 37 times
+Size 12: 5 times
+
+--- AA ---
+Size 4: 62273 times
+Size 5: 27002 times
+Size 6: 11872 times
+Size 8: 1772 times
+Size 7: 4775 times
+Size 9: 591 times
+Size 11: 47 times
+Size 10: 168 times
+Size 12: 8 times
+
+--- CC ---
+Size 4: 62249 times
+Size 7: 4836 times
+Size 6: 11743 times
+Size 5: 27080 times
+Size 8: 1786 times
+Size 9: 585 times
+Size 10: 146 times
+Size 11: 43 times
+Size 12: 8 times
+
+--- BB ---
+Size 4: 62474 times
+Size 5: 27390 times
+Size 6: 11821 times
+Size 7: 4824 times
+Size 9: 610 times
+Size 8: 1686 times
+Size 11: 43 times
+Size 10: 189 times
+Size 13: 2 times
+Size 12: 10 times
+
+--- HH ---
+Size 4: 62587 times
+Size 6: 11890 times
+Size 5: 27208 times
+Size 8: 1692 times
+Size 7: 4658 times
+Size 9: 547 times
+Size 11: 43 times
+Size 12: 9 times
+Size 10: 174 times
+
+
+****** 6x6 ******
+
+--- EE ---
+Size 5: 75369 times
+Size 6: 36862 times
+Size 4: 155497 times
+Size 11: 1195 times
+Size 8: 9409 times
+Size 7: 18250 times
+Size 10: 2283 times
+Size 9: 4680 times
+Size 12: 535 times
+Size 13: 266 times
+Size 14: 130 times
+Size 16: 31 times
+Size 15: 48 times
+Size 17: 10 times
+Size 18: 7 times
+Size 20: 1 times
+Size 19: 2 times
+
+--- BB ---
+Size 5: 75033 times
+Size 4: 155784 times
+Size 7: 18470 times
+Size 8: 9417 times
+Size 6: 37013 times
+Size 12: 598 times
+Size 10: 2263 times
+Size 9: 4765 times
+Size 17: 6 times
+Size 13: 289 times
+Size 11: 1199 times
+Size 14: 126 times
+Size 15: 52 times
+Size 16: 25 times
+Size 19: 4 times
+Size 18: 6 times
+Size 20: 1 times
+
+--- GG ---
+Size 4: 156967 times
+Size 6: 37068 times
+Size 5: 75255 times
+Size 7: 18551 times
+Size 10: 2365 times
+Size 8: 9187 times
+Size 12: 589 times
+Size 9: 4726 times
+Size 15: 52 times
+Size 11: 1182 times
+Size 13: 266 times
+Size 18: 10 times
+Size 14: 123 times
+Size 16: 21 times
+Size 17: 5 times
+Size 22: 1 times
+Size 19: 1 times
+Size 21: 1 times
+Size 20: 2 times
+
+--- DD ---
+Size 8: 9451 times
+Size 4: 156374 times
+Size 6: 36980 times
+Size 5: 75142 times
+Size 10: 2287 times
+Size 7: 18511 times
+Size 9: 4560 times
+Size 11: 1207 times
+Size 15: 58 times
+Size 12: 559 times
+Size 16: 23 times
+Size 13: 260 times
+Size 14: 118 times
+Size 18: 6 times
+Size 17: 4 times
+Size 20: 2 times
+Size 19: 2 times
+
+--- AA ---
+Size 5: 74609 times
+Size 6: 37181 times
+Size 4: 155626 times
+Size 8: 9343 times
+Size 7: 18432 times
+Size 9: 4619 times
+Size 10: 2366 times
+Size 13: 274 times
+Size 15: 50 times
+Size 11: 1179 times
+Size 12: 576 times
+Size 16: 22 times
+Size 14: 130 times
+Size 17: 7 times
+Size 20: 1 times
+
+--- CC ---
+Size 4: 156311 times
+Size 8: 9277 times
+Size 5: 74862 times
+Size 7: 18420 times
+Size 6: 36988 times
+Size 10: 2335 times
+Size 9: 4587 times
+Size 13: 297 times
+Size 12: 564 times
+Size 11: 1196 times
+Size 14: 140 times
+Size 15: 51 times
+Size 16: 26 times
+Size 19: 2 times
+Size 17: 4 times
+Size 18: 3 times
+Size 21: 1 times
+
+--- HH ---
+Size 4: 156378 times
+Size 5: 75268 times
+Size 6: 36957 times
+Size 7: 18423 times
+Size 10: 2310 times
+Size 8: 9187 times
+Size 9: 4755 times
+Size 12: 583 times
+Size 11: 1160 times
+Size 13: 270 times
+Size 14: 113 times
+Size 15: 41 times
+Size 18: 3 times
+Size 16: 22 times
+Size 17: 7 times
+Size 20: 1 times
+
+--- WD ---
+Size 4: 1 times
